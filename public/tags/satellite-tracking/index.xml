@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Satellite Tracking - Tag - AG website</title>
-        <link>/tags/satellite-tracking/</link>
+        <link>//localhost:1313/tags/satellite-tracking/</link>
         <description>Satellite Tracking - Tag - AG website</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>adgaona7@gmail.com (Andres Gaona)</managingEditor>
-            <webMaster>adgaona7@gmail.com (Andres Gaona)</webMaster><lastBuildDate>Tue, 27 Jan 2026 17:04:23 &#43;0800</lastBuildDate><atom:link href="/tags/satellite-tracking/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>adgaona7@gmail.com (Andres Gaona)</webMaster><lastBuildDate>Tue, 27 Jan 2026 17:04:23 &#43;0800</lastBuildDate><atom:link href="//localhost:1313/tags/satellite-tracking/" rel="self" type="application/rss+xml" /><item>
     <title>Automated Satellite Antenna Tracking System</title>
-    <link>/posts/post_07/</link>
+    <link>//localhost:1313/posts/post_07/</link>
     <pubDate>Tue, 27 Jan 2026 17:04:23 &#43;0800</pubDate>
     <author>adgaona7@gmail.com (Andres Gaona)</author>
-    <guid>/posts/post_07/</guid>
+    <guid>//localhost:1313/posts/post_07/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/post_07/cover.png" referrerpolicy="no-referrer">
             </div><p>Automated satellite antenna tracking system with high-precision control, redundancy, and real-time feedback.</p>]]></description>

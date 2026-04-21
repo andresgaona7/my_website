@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Robot Kinematics - Tag - AG website</title>
-        <link>/tags/robot-kinematics/</link>
+        <link>//localhost:1313/tags/robot-kinematics/</link>
         <description>Robot Kinematics - Tag - AG website</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>adgaona7@gmail.com (Andres Gaona)</managingEditor>
-            <webMaster>adgaona7@gmail.com (Andres Gaona)</webMaster><lastBuildDate>Tue, 27 Jan 2026 14:50:15 &#43;0800</lastBuildDate><atom:link href="/tags/robot-kinematics/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>adgaona7@gmail.com (Andres Gaona)</webMaster><lastBuildDate>Tue, 27 Jan 2026 14:50:15 &#43;0800</lastBuildDate><atom:link href="//localhost:1313/tags/robot-kinematics/" rel="self" type="application/rss+xml" /><item>
     <title>Intelligent AR/VR Robot Arm Teaching Technology</title>
-    <link>/posts/post_02/</link>
+    <link>//localhost:1313/posts/post_02/</link>
     <pubDate>Tue, 27 Jan 2026 14:50:15 &#43;0800</pubDate>
     <author>adgaona7@gmail.com (Andres Gaona)</author>
-    <guid>/posts/post_02/</guid>
+    <guid>//localhost:1313/posts/post_02/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/post_02/cover.png" referrerpolicy="no-referrer">
             </div><p>AR/VR-based virtual robot arm teaching system with millimeter accuracy using digital twin technology.</p>]]></description>

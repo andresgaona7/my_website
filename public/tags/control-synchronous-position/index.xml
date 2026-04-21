@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Control Synchronous Position - Tag - AG website</title>
-        <link>/tags/control-synchronous-position/</link>
+        <link>//localhost:1313/tags/control-synchronous-position/</link>
         <description>Control Synchronous Position - Tag - AG website</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>adgaona7@gmail.com (Andres Gaona)</managingEditor>
-            <webMaster>adgaona7@gmail.com (Andres Gaona)</webMaster><lastBuildDate>Tue, 27 Jan 2026 17:24:41 &#43;0800</lastBuildDate><atom:link href="/tags/control-synchronous-position/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>adgaona7@gmail.com (Andres Gaona)</webMaster><lastBuildDate>Tue, 27 Jan 2026 17:24:41 &#43;0800</lastBuildDate><atom:link href="//localhost:1313/tags/control-synchronous-position/" rel="self" type="application/rss+xml" /><item>
     <title>Real-Time Multi-Vendor EtherCAT Motion Control (MCCL)</title>
-    <link>/posts/post_11/</link>
+    <link>//localhost:1313/posts/post_11/</link>
     <pubDate>Tue, 27 Jan 2026 17:24:41 &#43;0800</pubDate>
     <author>adgaona7@gmail.com (Andres Gaona)</author>
-    <guid>/posts/post_11/</guid>
+    <guid>//localhost:1313/posts/post_11/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/post_11/cover.png" referrerpolicy="no-referrer">
             </div><p>A real-time, multi-vendor EtherCAT motion control platform was developed to abstract vendor differences while ensuring deterministic, synchronized multi-axis motion.</p>]]></description>
