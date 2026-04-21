@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Robotic Controllers &amp; Vision-Guided Manipulation - AG website</title><meta name="Description" content="This is my cool site"><meta property="og:url" content="/posts/post_04/">
+  <meta property="og:site_name" content="AG website">
+  <meta property="og:title" content="Robotic Controllers & Vision-Guided Manipulation">
+  <meta property="og:description" content="Development of real-time robotic controllers integrating forward/inverse kinematics, EtherCAT motion control, and AI-based object detection for industrial manipulation.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-01-27T16:49:02+08:00">
+    <meta property="article:modified_time" content="2026-01-27T16:49:02+08:00">
+    <meta property="article:tag" content="Robotics">
+    <meta property="article:tag" content="Motion Control">
+    <meta property="article:tag" content="Kinematics">
+    <meta property="article:tag" content="Computer Vision">
+    <meta property="article:tag" content="EtherCAT">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Robotic Controllers & Vision-Guided Manipulation">
+  <meta name="twitter:description" content="Development of real-time robotic controllers integrating forward/inverse kinematics, EtherCAT motion control, and AI-based object detection for industrial manipulation.">
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site">
+<meta name="referrer" content="no-referrer" /><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/post_04/" /><link rel="prev" href="/posts/post_03/" /><link rel="next" href="/posts/post_05/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Robotic Controllers \u0026 Vision-Guided Manipulation",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/posts\/post_04\/"
+        },"genre": "posts","keywords": "Robotics, Motion control, Kinematics, Computer vision, EtherCAT","wordcount":  385 ,
+        "url": "\/posts\/post_04\/","datePublished": "2026-01-27T16:49:02+08:00","dateModified": "2026-01-27T16:49:02+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Andrés Gaona"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>
+          const query = window.matchMedia('(prefers-color-scheme: dark)');
+          function applyTheme() {
+            let theme = window.localStorage?.getItem('theme') || 'auto';
+            let isDark = theme === 'dark' || (theme === 'auto' && query.matches);
+            document.body.setAttribute('theme', isDark? 'dark' : 'light');
+            document.body.setAttribute('cfg-theme', theme);
+          }
+
+          applyTheme();
+          query.addEventListener('change', applyTheme);
+        </script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="AG website">Andrés Gaona</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/about/">🫆 About me </a><a class="menu-item" href="/posts/">📚 Posts </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="AG website">Andrés Gaona</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/about/" title="">🫆About me</a><a class="menu-item" href="/posts/" title="">📚Posts</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Robotic Controllers & Vision-Guided Manipulation</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle" aria-hidden="true"></i>Andrés Gaona</a></span>&nbsp;<span class="post-category">included in <a href="/categories/motion-control/"><i class="far fa-folder" aria-hidden="true"></i>Motion Control</a>&nbsp;<a href="/categories/robotics-control/"><i class="far fa-folder" aria-hidden="true"></i>Robotics Control</a>&nbsp;<a href="/categories/kinematics/"><i class="far fa-folder" aria-hidden="true"></i>Kinematics</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;<time datetime="2026-01-27">2026-01-27</time>&nbsp;<i class="fas fa-pencil-alt" aria-hidden="true"></i>&nbsp;385 words&nbsp;
+                <i class="far fa-clock" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/post_04/cover.png"
+        data-srcset="/post_04/cover.png, /post_04/cover.png 1.5x, /post_04/cover.png 2x"
+        data-sizes="auto"
+        alt="/post_04/cover.png"
+        title="/post_04/cover.png" width="3000" height="1000" /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#-overview--challenges">🧠 Overview &amp; Challenges</a></li>
+    <li><a href="#-project-overview">🛠️ Project Overview</a>
+      <ul>
+        <li><a href="#-real-time-multi-axis-motion-control">🔧 Real-Time Multi-Axis Motion Control</a></li>
+        <li><a href="#-forward--inverse-kinematics-engines">📐 Forward &amp; Inverse Kinematics Engines</a></li>
+        <li><a href="#-vision--object-detection">👁️ Vision &amp; Object Detection</a></li>
+      </ul>
+    </li>
+    <li><a href="#-my-contributions">💡 My Contributions</a></li>
+    <li><a href="#-results--impact">🎯 Results &amp; Impact</a>
+      <ul>
+        <li><a href="#-performance--precision">🚀 Performance &amp; Precision</a></li>
+        <li><a href="#-system-integration--scalability">🤝 System Integration &amp; Scalability</a></li>
+        <li><a href="#-real-world-automation-gains">🤖 Real-World Automation Gains</a></li>
+      </ul>
+    </li>
+    <li><a href="#-links">📎 Links</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Development of real-time robotic controllers integrating forward/inverse kinematics, EtherCAT motion control, and AI-based object detection for industrial manipulation.</p>
+<h2 id="-overview--challenges">🧠 Overview &amp; Challenges</h2>
+<p>This project focused on architecting <strong>real-time robotic control systems</strong> that combine motion precision, advanced kinematics, and vision-based perception for industrial automation. It tackled three core challenges:</p>
+<ul>
+<li>🔄 <strong>Deterministic real-time control</strong> across multi-axis robotic systems</li>
+<li>📐 <strong>Accurate kinematic modeling</strong> for robots with diverse geometries</li>
+<li>👁️‍🗨️ <strong>Vision-guided manipulation</strong> in dynamic production environments</li>
+</ul>
+<p>The goal was to create a <strong>scalable, high-performance framework</strong> capable of integrating heterogeneous hardware, complex motion planning, and perception in a single unified system — and deliver real, measurable impact in industrial robotics workflows.</p>
+<hr>
+<h2 id="-project-overview">🛠️ Project Overview</h2>
+<p>Modern industrial systems demand robots that are <strong>precise, responsive, and adaptable</strong>. This project delivered:</p>
+<h3 id="-real-time-multi-axis-motion-control">🔧 Real-Time Multi-Axis Motion Control</h3>
+<ul>
+<li>Designed <strong>deterministic multi-axis controllers</strong> able to operate in strict real-time with EtherCAT communication.</li>
+<li>Supported multiple control paradigms — <strong>CSP (Cyclic Synchronous Position)</strong> and <strong>PP (Profile Position)</strong> — across motors from different manufacturers.</li>
+<li>Built tools for <strong>large-scale integration</strong> of multi-vendor EtherCAT networks, enhancing system compatibility.</li>
+</ul>
+<h3 id="-forward--inverse-kinematics-engines">📐 Forward &amp; Inverse Kinematics Engines</h3>
+<ul>
+<li>Built high-fidelity <strong>FK/IK solvers</strong> for:
+<ul>
+<li>Standard industrial manipulators</li>
+</ul>
+</li>
+<li>Validated solver accuracy through trajectory tracking and closed-loop control experiments.</li>
+</ul>
+<h3 id="-vision--object-detection">👁️ Vision &amp; Object Detection</h3>
+<ul>
+<li>Integrated <strong>AI-based vision pipelines</strong> directly into the motion planning loop.</li>
+<li>Enabled robots to <strong>identify object types and positions</strong> (e.g., microchips) and act autonomously from perception to actuation.</li>
+<li>Merged perception data seamlessly into motion control, drastically reducing latency and increasing reactivity.</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/post_04/img1.png"
+        data-srcset="/post_04/img1.png, /post_04/img1.png 1.5x, /post_04/img1.png 2x"
+        data-sizes="auto"
+        alt="/post_04/img1.png"
+        title="1" width="1744" height="728" /></p>
+<hr>
+<h2 id="-my-contributions">💡 My Contributions</h2>
+<p>I built and delivered the core elements of the system:</p>
+<ul>
+<li>⚙️ <strong>High-performance real-time robotic controllers</strong> with EtherCAT determinism.</li>
+<li>📊 <strong>Robust kinematic solvers</strong> for both serial and parallel mechanisms.</li>
+<li>🤖 <strong>Vision-integrated automation</strong>, bridging perception and motion in a unified architecture.</li>
+<li>🛠️ <strong>Multi-vendor hardware compatibility</strong>, enabling scalable industrial deployment.</li>
+<li>📈 <strong>Architectural innovation</strong> that reduced system latency and improved responsiveness.</li>
+</ul>
+<hr>
+<h2 id="-results--impact">🎯 Results &amp; Impact</h2>
+<p>This work achieved measurable improvements in both capability and performance:</p>
+<h3 id="-performance--precision">🚀 Performance &amp; Precision</h3>
+<ul>
+<li><strong>Deterministic control loops</strong> that met real-time constraints in demanding industrial scenarios.</li>
+<li>High-accuracy motion tracking backed by validated FK/IK solvers.</li>
+</ul>
+<h3 id="-system-integration--scalability">🤝 System Integration &amp; Scalability</h3>
+<ul>
+<li>A <strong>scalable control framework</strong> that supports heterogeneous motors and communication networks.</li>
+<li>Reduced complexity in industrial setups through unified control + perception architecture.</li>
+</ul>
+<h3 id="-real-world-automation-gains">🤖 Real-World Automation Gains</h3>
+<ul>
+<li>Enabled <strong>vision-guided robotic picking</strong>, reducing manual intervention.</li>
+</ul>
+<ul>
+<li>Demonstrated AI-assisted automation ready for industrial adoption.</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/post_04/img2.png"
+        data-srcset="/post_04/img2.png, /post_04/img2.png 1.5x, /post_04/img2.png 2x"
+        data-sizes="auto"
+        alt="/post_04/img2.png"
+        title="1" width="1752" height="1458" /></p>
+<hr>
+<h2 id="-links">📎 Links</h2></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2026-01-27</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="/posts/post_04/" data-title="Robotic Controllers &amp; Vision-Guided Manipulation" data-hashtags="Robotics,Motion control,Kinematics,Computer vision,EtherCAT"><i class="fab fa-x-twitter" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="/posts/post_04/" data-title="Robotic Controllers &amp; Vision-Guided Manipulation"><i class="fab fa-threads" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/post_04/" data-hashtag="Robotics"><i class="fab fa-facebook-square" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/posts/post_04/" data-title="Robotic Controllers &amp; Vision-Guided Manipulation"><i class="fab fa-hacker-news" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/post_04/" data-title="Robotic Controllers &amp; Vision-Guided Manipulation"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@16.9.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/posts/post_04/" data-title="Robotic Controllers &amp; Vision-Guided Manipulation" data-image="post_04/cover.png"><i class="fab fa-weibo" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Diaspora" data-sharer="diaspora" data-url="/posts/post_04/" data-title="Robotic Controllers &amp; Vision-Guided Manipulation" data-description=""><i class="fab fa-diaspora" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=%2fposts%2fpost_04%2f&amp;text=Robotic%20Controllers%20%26%20Vision-Guided%20Manipulation" target="_blank" title="Share on Telegram"><i class="fab fa-telegram" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<a href="/tags/robotics/">Robotics</a>,&nbsp;<a href="/tags/motion-control/">Motion Control</a>,&nbsp;<a href="/tags/kinematics/">Kinematics</a>,&nbsp;<a href="/tags/computer-vision/">Computer Vision</a>,&nbsp;<a href="/tags/ethercat/">EtherCAT</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/post_03/" class="prev" rel="prev" title="Smart Tuning Technology"><i class="fas fa-angle-left" aria-hidden="true"></i>Smart Tuning Technology</a>
+            <a href="/posts/post_05/" class="next" rel="next" title="Robotic Grasping Using Evolutionary Deep Neural Networks">Robotic Grasping Using Evolutionary Deep Neural Networks<i class="fas fa-angle-right" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Andres Gaona</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment" aria-hidden="true"></i>
+            </a>
+        </div><script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.2/sharer.min.js"></script><script>window.config={"comment":{}};</script><script src="/js/theme.js"></script></body>
+</html>

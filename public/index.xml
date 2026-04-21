@@ -1,0 +1,110 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>AG website</title>
+        <link>/</link>
+        <description>This is my cool site</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>adgaona7@gmail.com (Andres Gaona)</managingEditor>
+            <webMaster>adgaona7@gmail.com (Andres Gaona)</webMaster><lastBuildDate>Mon, 20 Apr 2026 18:03:39 &#43;0800</lastBuildDate>
+            <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>Real-Time Multi-Vendor EtherCAT Motion Control (MCCL)</title>
+    <link>/posts/post_11/</link>
+    <pubDate>Tue, 27 Jan 2026 17:24:41 &#43;0800</pubDate>
+    <author>adgaona7@gmail.com (Andres Gaona)</author>
+    <guid>/posts/post_11/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/post_11/cover.png" referrerpolicy="no-referrer">
+            </div><p>A real-time, multi-vendor EtherCAT motion control platform was developed to abstract vendor differences while ensuring deterministic, synchronized multi-axis motion.</p>]]></description>
+</item>
+<item>
+    <title>Bio-Inspired Robots (Bionic Panda)</title>
+    <link>/posts/post_10/</link>
+    <pubDate>Tue, 27 Jan 2026 17:21:21 &#43;0800</pubDate>
+    <author>adgaona7@gmail.com (Andres Gaona)</author>
+    <guid>/posts/post_10/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/post_10/cover.png" referrerpolicy="no-referrer">
+            </div><p>High-fidelity simulation and real-time control of a bio-inspired panda robot with torque control, MPC/WBC locomotion, and autonomous behaviors.</p>]]></description>
+</item>
+<item>
+    <title>Four-Legged Robot Platform</title>
+    <link>/posts/post_09/</link>
+    <pubDate>Tue, 27 Jan 2026 17:18:00 &#43;0800</pubDate>
+    <author>adgaona7@gmail.com (Andres Gaona)</author>
+    <guid>/posts/post_09/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/post_09/cover.png" referrerpolicy="no-referrer">
+            </div><p>Design and development of a real-time, torque-controlled quadruped robot using EtherCAT, model-based control, and MPC.</p>]]></description>
+</item>
+<item>
+    <title>Autonomous Mobile Robot (AMR) for Indoor Environments</title>
+    <link>/posts/post_08/</link>
+    <pubDate>Tue, 27 Jan 2026 17:08:08 &#43;0800</pubDate>
+    <author>adgaona7@gmail.com (Andres Gaona)</author>
+    <guid>/posts/post_08/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/post_08/cover.png" referrerpolicy="no-referrer">
+            </div><p>Design, construction, and control of an indoor autonomous mobile robot combining academic research and industrial ROS-based implementations.</p>]]></description>
+</item>
+<item>
+    <title>Automated Satellite Antenna Tracking System</title>
+    <link>/posts/post_07/</link>
+    <pubDate>Tue, 27 Jan 2026 17:04:23 &#43;0800</pubDate>
+    <author>adgaona7@gmail.com (Andres Gaona)</author>
+    <guid>/posts/post_07/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/post_07/cover.png" referrerpolicy="no-referrer">
+            </div><p>Automated satellite antenna tracking system with high-precision control, redundancy, and real-time feedback.</p>]]></description>
+</item>
+<item>
+    <title>Deep Learning-Driven Robotic Plastic Waste Sorter</title>
+    <link>/posts/post_06/</link>
+    <pubDate>Tue, 27 Jan 2026 17:00:12 &#43;0800</pubDate>
+    <author>adgaona7@gmail.com (Andres Gaona)</author>
+    <guid>/posts/post_06/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/post_06/cover.png" referrerpolicy="no-referrer">
+            </div><p>A high-speed robotic system for real-time plastic waste detection, classification, and picking using YOLOv4 and delta robot control.</p>]]></description>
+</item>
+<item>
+    <title>Robotic Grasping Using Evolutionary Deep Neural Networks</title>
+    <link>/posts/post_05/</link>
+    <pubDate>Tue, 27 Jan 2026 16:54:19 &#43;0800</pubDate>
+    <author>adgaona7@gmail.com (Andres Gaona)</author>
+    <guid>/posts/post_05/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/post_05/cover.png" referrerpolicy="no-referrer">
+            </div><p>AI-based robotic grasping system combining deep neural networks and evolutionary optimization for robust object grasp estimation.</p>]]></description>
+</item>
+<item>
+    <title>Robotic Controllers &amp; Vision-Guided Manipulation</title>
+    <link>/posts/post_04/</link>
+    <pubDate>Tue, 27 Jan 2026 16:49:02 &#43;0800</pubDate>
+    <author>adgaona7@gmail.com (Andres Gaona)</author>
+    <guid>/posts/post_04/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/post_04/cover.png" referrerpolicy="no-referrer">
+            </div><p>Development of real-time robotic controllers integrating forward/inverse kinematics, EtherCAT motion control, and AI-based object detection for industrial manipulation.</p>]]></description>
+</item>
+<item>
+    <title>Smart Tuning Technology</title>
+    <link>/posts/post_03/</link>
+    <pubDate>Tue, 27 Jan 2026 16:43:08 &#43;0800</pubDate>
+    <author>adgaona7@gmail.com (Andres Gaona)</author>
+    <guid>/posts/post_03/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/post_03/cover.png" referrerpolicy="no-referrer">
+            </div><p><strong>Smart Tuning Technology</strong> automates controller and servo driver tuning using optimization algorithms and sensor feedback, enabling fast and reliable parameter tuning across platforms.</p>]]></description>
+</item>
+<item>
+    <title>Intelligent AR/VR Robot Arm Teaching Technology</title>
+    <link>/posts/post_02/</link>
+    <pubDate>Tue, 27 Jan 2026 14:50:15 &#43;0800</pubDate>
+    <author>adgaona7@gmail.com (Andres Gaona)</author>
+    <guid>/posts/post_02/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/post_02/cover.png" referrerpolicy="no-referrer">
+            </div><p>AR/VR-based virtual robot arm teaching system with millimeter accuracy using digital twin technology.</p>]]></description>
+</item>
+</channel>
+</rss>

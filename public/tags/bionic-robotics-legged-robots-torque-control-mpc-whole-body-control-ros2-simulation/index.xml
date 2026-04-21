@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bionic Robotics&#34;, &#34;Legged Robots&#34;, &#34;Torque Control&#34;, &#34;MPC&#34;, &#34;Whole-Body Control&#34;, &#34;ROS2&#34;, &#34;Simulation on Andres Gaona</title>
+    <link>http://localhost:1313/tags/bionic-robotics-legged-robots-torque-control-mpc-whole-body-control-ros2-simulation/</link>
+    <description>Recent content in Bionic Robotics&#34;, &#34;Legged Robots&#34;, &#34;Torque Control&#34;, &#34;MPC&#34;, &#34;Whole-Body Control&#34;, &#34;ROS2&#34;, &#34;Simulation on Andres Gaona</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 27 Jan 2026 17:21:21 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/bionic-robotics-legged-robots-torque-control-mpc-whole-body-control-ros2-simulation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bio-Inspired Robots (Bionic Panda)</title>
+      <link>http://localhost:1313/posts/post_10/</link>
+      <pubDate>Tue, 27 Jan 2026 17:21:21 +0800</pubDate>
+      <guid>http://localhost:1313/posts/post_10/</guid>
+      <description>&lt;p&gt;High-fidelity simulation and real-time control of a bio-inspired panda robot with torque control, MPC/WBC locomotion, and autonomous behaviors.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

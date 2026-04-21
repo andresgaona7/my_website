@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ROS2 on Andres Gaona</title>
+    <link>http://localhost:1313/tags/ros2/</link>
+    <description>Recent content in ROS2 on Andres Gaona</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 27 Jan 2026 17:21:21 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ros2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bio-Inspired Robots (Bionic Panda)</title>
+      <link>http://localhost:1313/posts/post_10/</link>
+      <pubDate>Tue, 27 Jan 2026 17:21:21 +0800</pubDate>
+      <guid>http://localhost:1313/posts/post_10/</guid>
+      <description>&lt;p&gt;High-fidelity simulation and real-time control of a bio-inspired panda robot with torque control, MPC/WBC locomotion, and autonomous behaviors.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

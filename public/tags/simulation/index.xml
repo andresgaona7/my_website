@@ -1,0 +1,18 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Simulation - Tag - AG website</title>
+        <link>/tags/simulation/</link>
+        <description>Simulation - Tag - AG website</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>adgaona7@gmail.com (Andres Gaona)</managingEditor>
+            <webMaster>adgaona7@gmail.com (Andres Gaona)</webMaster><lastBuildDate>Tue, 27 Jan 2026 17:21:21 &#43;0800</lastBuildDate><atom:link href="/tags/simulation/" rel="self" type="application/rss+xml" /><item>
+    <title>Bio-Inspired Robots (Bionic Panda)</title>
+    <link>/posts/post_10/</link>
+    <pubDate>Tue, 27 Jan 2026 17:21:21 &#43;0800</pubDate>
+    <author>adgaona7@gmail.com (Andres Gaona)</author>
+    <guid>/posts/post_10/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/post_10/cover.png" referrerpolicy="no-referrer">
+            </div><p>High-fidelity simulation and real-time control of a bio-inspired panda robot with torque control, MPC/WBC locomotion, and autonomous behaviors.</p>]]></description>
+</item>
+</channel>
+</rss>

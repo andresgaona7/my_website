@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Human-I on Andres Gaona</title>
+    <link>http://localhost:1313/categories/human-i/</link>
+    <description>Recent content in Human-I on Andres Gaona</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 27 Jan 2026 14:50:15 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/human-i/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Post_02</title>
+      <link>http://localhost:1313/posts/post_02/</link>
+      <pubDate>Tue, 27 Jan 2026 14:50:15 +0800</pubDate>
+      <guid>http://localhost:1313/posts/post_02/</guid>
+      <description>&lt;p&gt;tags: [&amp;ldquo;AR&amp;rdquo;, &amp;ldquo;VR&amp;rdquo;, &amp;ldquo;Robotics&amp;rdquo;, &amp;ldquo;Digital Twin&amp;rdquo;, &amp;ldquo;Kinematics&amp;rdquo;]&#xA;categories: [&amp;ldquo;Robotics&amp;rdquo;, &amp;ldquo;Human-Robot Interaction&amp;rdquo;]&#xA;AR/VR-based virtual robot arm teaching system with sub-millimeter accuracy using digital twin technology.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

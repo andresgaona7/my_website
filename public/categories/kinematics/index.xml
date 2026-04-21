@@ -1,0 +1,18 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Kinematics - Category - AG website</title>
+        <link>/categories/kinematics/</link>
+        <description>Kinematics - Category - AG website</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>adgaona7@gmail.com (Andres Gaona)</managingEditor>
+            <webMaster>adgaona7@gmail.com (Andres Gaona)</webMaster><lastBuildDate>Tue, 27 Jan 2026 16:49:02 &#43;0800</lastBuildDate><atom:link href="/categories/kinematics/" rel="self" type="application/rss+xml" /><item>
+    <title>Robotic Controllers &amp; Vision-Guided Manipulation</title>
+    <link>/posts/post_04/</link>
+    <pubDate>Tue, 27 Jan 2026 16:49:02 &#43;0800</pubDate>
+    <author>adgaona7@gmail.com (Andres Gaona)</author>
+    <guid>/posts/post_04/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/post_04/cover.png" referrerpolicy="no-referrer">
+            </div><p>Development of real-time robotic controllers integrating forward/inverse kinematics, EtherCAT motion control, and AI-based object detection for industrial manipulation.</p>]]></description>
+</item>
+</channel>
+</rss>

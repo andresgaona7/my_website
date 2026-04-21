@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on AG website</title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on AG website</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>adgaona7@gmail.com (Andres Gaona)</managingEditor>
+    <webMaster>adgaona7@gmail.com (Andres Gaona)</webMaster>
+    <lastBuildDate>Tue, 27 Jan 2026 17:24:41 +0800</lastBuildDate>
+    <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Motion Control Library</title>
+      <link>/categories/motion-control-library/</link>
+      <pubDate>Tue, 27 Jan 2026 17:24:41 +0800</pubDate><author>adgaona7@gmail.com (Andres Gaona)</author>
+      <guid>/categories/motion-control-library/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Artificial Intelligence</title>
+      <link>/categories/artificial-intelligence/</link>
+      <pubDate>Tue, 27 Jan 2026 17:21:21 +0800</pubDate><author>adgaona7@gmail.com (Andres Gaona)</author>
+      <guid>/categories/artificial-intelligence/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Four-Legged Robotics</title>
+      <link>/categories/four-legged-robotics/</link>
+      <pubDate>Tue, 27 Jan 2026 17:21:21 +0800</pubDate><author>adgaona7@gmail.com (Andres Gaona)</author>
+      <guid>/categories/four-legged-robotics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Robotics</title>
+      <link>/categories/robotics/</link>
+      <pubDate>Tue, 27 Jan 2026 17:18:00 +0800</pubDate><author>adgaona7@gmail.com (Andres Gaona)</author>
+      <guid>/categories/robotics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mobile Robotics</title>
+      <link>/categories/mobile-robotics/</link>
+      <pubDate>Tue, 27 Jan 2026 17:08:08 +0800</pubDate><author>adgaona7@gmail.com (Andres Gaona)</author>
+      <guid>/categories/mobile-robotics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Control System</title>
+      <link>/categories/control-system/</link>
+      <pubDate>Tue, 27 Jan 2026 17:04:23 +0800</pubDate><author>adgaona7@gmail.com (Andres Gaona)</author>
+      <guid>/categories/control-system/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Motion Control</title>
+      <link>/categories/motion-control/</link>
+      <pubDate>Tue, 27 Jan 2026 17:04:23 +0800</pubDate><author>adgaona7@gmail.com (Andres Gaona)</author>
+      <guid>/categories/motion-control/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kinematics</title>
+      <link>/categories/kinematics/</link>
+      <pubDate>Tue, 27 Jan 2026 16:49:02 +0800</pubDate><author>adgaona7@gmail.com (Andres Gaona)</author>
+      <guid>/categories/kinematics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Robotics Control</title>
+      <link>/categories/robotics-control/</link>
+      <pubDate>Tue, 27 Jan 2026 16:49:02 +0800</pubDate><author>adgaona7@gmail.com (Andres Gaona)</author>
+      <guid>/categories/robotics-control/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Control Sytems</title>
+      <link>/categories/control-sytems/</link>
+      <pubDate>Tue, 27 Jan 2026 16:43:08 +0800</pubDate><author>adgaona7@gmail.com (Andres Gaona)</author>
+      <guid>/categories/control-sytems/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Optimization</title>
+      <link>/categories/optimization/</link>
+      <pubDate>Tue, 27 Jan 2026 16:43:08 +0800</pubDate><author>adgaona7@gmail.com (Andres Gaona)</author>
+      <guid>/categories/optimization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Human-Robot Interaction</title>
+      <link>/categories/human-robot-interaction/</link>
+      <pubDate>Tue, 27 Jan 2026 14:50:15 +0800</pubDate><author>adgaona7@gmail.com (Andres Gaona)</author>
+      <guid>/categories/human-robot-interaction/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

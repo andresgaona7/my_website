@@ -1,0 +1,18 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Model-Based Control - Tag - AG website</title>
+        <link>/tags/model-based-control/</link>
+        <description>Model-Based Control - Tag - AG website</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>adgaona7@gmail.com (Andres Gaona)</managingEditor>
+            <webMaster>adgaona7@gmail.com (Andres Gaona)</webMaster><lastBuildDate>Tue, 27 Jan 2026 17:18:00 &#43;0800</lastBuildDate><atom:link href="/tags/model-based-control/" rel="self" type="application/rss+xml" /><item>
+    <title>Four-Legged Robot Platform</title>
+    <link>/posts/post_09/</link>
+    <pubDate>Tue, 27 Jan 2026 17:18:00 &#43;0800</pubDate>
+    <author>adgaona7@gmail.com (Andres Gaona)</author>
+    <guid>/posts/post_09/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/post_09/cover.png" referrerpolicy="no-referrer">
+            </div><p>Design and development of a real-time, torque-controlled quadruped robot using EtherCAT, model-based control, and MPC.</p>]]></description>
+</item>
+</channel>
+</rss>

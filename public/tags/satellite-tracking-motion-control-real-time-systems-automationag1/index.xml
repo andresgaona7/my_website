@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Satellite Tracking-Motion Control&#34;, &#34;Real-Time Systems&#34;, &#34;Automation&#34;ag1 on Andres Gaona</title>
+    <link>http://localhost:1313/tags/satellite-tracking-motion-control-real-time-systems-automationag1/</link>
+    <description>Recent content in Satellite Tracking-Motion Control&#34;, &#34;Real-Time Systems&#34;, &#34;Automation&#34;ag1 on Andres Gaona</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 27 Jan 2026 17:04:23 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/satellite-tracking-motion-control-real-time-systems-automationag1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Antenna Maintenance &amp; Control System</title>
+      <link>http://localhost:1313/posts/post_07/</link>
+      <pubDate>Tue, 27 Jan 2026 17:04:23 +0800</pubDate>
+      <guid>http://localhost:1313/posts/post_07/</guid>
+      <description>&lt;p&gt;Automated satellite antenna tracking system with high-precision control, redundancy, and real-time feedback.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

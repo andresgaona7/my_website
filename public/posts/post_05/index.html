@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Robotic Grasping Using Evolutionary Deep Neural Networks - AG website</title><meta name="Description" content="This is my cool site"><meta property="og:url" content="/posts/post_05/">
+  <meta property="og:site_name" content="AG website">
+  <meta property="og:title" content="Robotic Grasping Using Evolutionary Deep Neural Networks">
+  <meta property="og:description" content="AI-based robotic grasping system combining deep neural networks and evolutionary optimization for robust object grasp estimation.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-01-27T16:54:19+08:00">
+    <meta property="article:modified_time" content="2026-01-27T16:54:19+08:00">
+    <meta property="article:tag" content="Robotics">
+    <meta property="article:tag" content="Deep Learning">
+    <meta property="article:tag" content="Computer Vision">
+    <meta property="article:tag" content="PSO">
+    <meta property="article:tag" content="Grasping">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Robotic Grasping Using Evolutionary Deep Neural Networks">
+  <meta name="twitter:description" content="AI-based robotic grasping system combining deep neural networks and evolutionary optimization for robust object grasp estimation.">
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site">
+<meta name="referrer" content="no-referrer" /><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/post_05/" /><link rel="prev" href="/posts/post_04/" /><link rel="next" href="/posts/post_06/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Robotic Grasping Using Evolutionary Deep Neural Networks",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/posts\/post_05\/"
+        },"genre": "posts","keywords": "Robotics, Deep Learning, Computer Vision, PSO, Grasping","wordcount":  420 ,
+        "url": "\/posts\/post_05\/","datePublished": "2026-01-27T16:54:19+08:00","dateModified": "2026-01-27T16:54:19+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Andrés Gaona"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>
+          const query = window.matchMedia('(prefers-color-scheme: dark)');
+          function applyTheme() {
+            let theme = window.localStorage?.getItem('theme') || 'auto';
+            let isDark = theme === 'dark' || (theme === 'auto' && query.matches);
+            document.body.setAttribute('theme', isDark? 'dark' : 'light');
+            document.body.setAttribute('cfg-theme', theme);
+          }
+
+          applyTheme();
+          query.addEventListener('change', applyTheme);
+        </script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="AG website">Andrés Gaona</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/about/">🫆 About me </a><a class="menu-item" href="/posts/">📚 Posts </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="AG website">Andrés Gaona</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/about/" title="">🫆About me</a><a class="menu-item" href="/posts/" title="">📚Posts</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Robotic Grasping Using Evolutionary Deep Neural Networks</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle" aria-hidden="true"></i>Andrés Gaona</a></span>&nbsp;<span class="post-category">included in <a href="/categories/robotics/"><i class="far fa-folder" aria-hidden="true"></i>Robotics</a>&nbsp;<a href="/categories/artificial-intelligence/"><i class="far fa-folder" aria-hidden="true"></i>Artificial Intelligence</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;<time datetime="2026-01-27">2026-01-27</time>&nbsp;<i class="fas fa-pencil-alt" aria-hidden="true"></i>&nbsp;420 words&nbsp;
+                <i class="far fa-clock" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/post_05/cover.png"
+        data-srcset="/post_05/cover.png, /post_05/cover.png 1.5x, /post_05/cover.png 2x"
+        data-sizes="auto"
+        alt="/post_05/cover.png"
+        title="/post_05/cover.png" width="3000" height="1000" /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#-overview--challenges">🧩 Overview &amp; Challenges</a></li>
+    <li><a href="#-project-description">🧠 Project Description</a></li>
+    <li><a href="#-my-contributions">🛠️ My Contributions</a></li>
+    <li><a href="#-results--impact">📊 Results &amp; Impact</a>
+      <ul>
+        <li><a href="#-performance-gains">🚀 Performance Gains</a></li>
+        <li><a href="#-real-robot-success">🤖 Real Robot Success</a></li>
+        <li><a href="#-competitive-advantage">📈 Competitive Advantage</a></li>
+        <li><a href="#-practical-impact">🌍 Practical Impact</a></li>
+      </ul>
+    </li>
+    <li><a href="#-links">📎 Links</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>AI-based robotic grasping system combining deep neural networks and evolutionary optimization for robust object grasp estimation.</p>
+<h2 id="-overview--challenges">🧩 Overview &amp; Challenges</h2>
+<p>Robotic grasping in real-world environments is a <strong>hard problem</strong>: objects vary widely in shape, size, orientation, and material, while perception systems are noisy and incomplete.</p>
+<p>Most deep-learning grasping methods face a <strong>critical trade-off</strong>:</p>
+<ul>
+<li><strong>High accuracy → slow inference</strong></li>
+<li><strong>Fast inference → unstable or unreliable grasps</strong></li>
+</ul>
+<p>The challenge was to <strong>break this trade-off</strong> and design a system that is:</p>
+<ul>
+<li>Fast enough for <strong>real-time robotic manipulation</strong></li>
+<li>Accurate and <strong>repeatable across unseen objects</strong></li>
+<li>Directly deployable on <strong>real robotic hardware</strong></li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/post_05/img1.png"
+        data-srcset="/post_05/img1.png, /post_05/img1.png 1.5x, /post_05/img1.png 2x"
+        data-sizes="auto"
+        alt="/post_05/img1.png"
+        title="1" width="740" height="556" /></p>
+<hr>
+<h2 id="-project-description">🧠 Project Description</h2>
+<p>I developed an <strong>AI-driven robotic grasping estimation framework</strong> that combines:</p>
+<ul>
+<li><strong>Deep Neural Networks (CNNs)</strong> for grasp feasibility classification</li>
+<li><strong>Evolutionary optimization (Particle Swarm Optimization)</strong> for refining grasp candidates</li>
+<li><strong>Stereo vision</strong> to convert 2D grasp predictions into executable 3D robot commands</li>
+</ul>
+<p>The system first detects whether graspable features exist, then <strong>evolves grasp hypotheses</strong> toward the most reliable configuration—explicitly optimizing for <strong>accuracy, repeatability, and physical feasibility</strong>.</p>
+<p>Unlike end-to-end black-box models, this approach introduces <strong>structured reasoning and confidence control</strong>, allowing the robot to <strong>reject unsafe grasps instead of failing blindly</strong>.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/post_05/img5.gif"
+        data-srcset="/post_05/img5.gif, /post_05/img5.gif 1.5x, /post_05/img5.gif 2x"
+        data-sizes="auto"
+        alt="/post_05/img5.gif"
+        title="1" width="853" height="622" /></p>
+<hr>
+<h2 id="-my-contributions">🛠️ My Contributions</h2>
+<p>I was the <strong>main technical driver</strong> of this project and delivered the system end-to-end:</p>
+<ul>
+<li>✅ Designed and implemented the <strong>AI grasping estimation algorithm</strong></li>
+<li>✅ Developed the <strong>real-time inference pipeline</strong> (≈2 seconds per grasp)</li>
+<li>✅ Built and labeled a <strong>custom grasping dataset</strong>, expanded to <strong>1.5M+ samples</strong> via data augmentation</li>
+<li>✅ Integrated <strong>CNN inference + evolutionary optimization</strong> into a single decision framework</li>
+<li>✅ Implemented <strong>confidence-aware grasp rejection</strong> to reduce real-world failures</li>
+<li>✅ Deployed and validated the system on a <strong>6-DOF industrial robot with a two-finger gripper</strong></li>
+<li>✅ Benchmarked performance against <strong>state-of-the-art grasping methods</strong></li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/post_05/img2.png"
+        data-srcset="/post_05/img2.png, /post_05/img2.png 1.5x, /post_05/img2.png 2x"
+        data-sizes="auto"
+        alt="/post_05/img2.png"
+        title="1" width="2174" height="728" /></p>
+<p>This was not a simulation-only project—the system was <strong>executed on real hardware</strong>, lifting and manipulating real objects.</p>
+<hr>
+<h2 id="-results--impact">📊 Results &amp; Impact</h2>
+<h3 id="-performance-gains">🚀 Performance Gains</h3>
+<ul>
+<li><strong>~10× faster inference</strong> than classical deep-learning grasp detectors</li>
+<li><strong>2.0 s average grasp estimation time</strong> with stable convergence</li>
+<li><strong>91.5% CNN classification accuracy</strong> on unseen grasp features</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/post_05/img3.png"
+        data-srcset="/post_05/img3.png, /post_05/img3.png 1.5x, /post_05/img3.png 2x"
+        data-sizes="auto"
+        alt="/post_05/img3.png"
+        title="1" width="2400" height="1036" /></p>
+<h3 id="-real-robot-success">🤖 Real Robot Success</h3>
+<ul>
+<li><strong>94% grasp success rate</strong> on physical robot experiments (with confidence filtering)</li>
+<li>Reliable grasping across <strong>30+ real objects</strong>, including tools, household items, and personal objects</li>
+<li>High <strong>repeatability</strong>: consistent grasp location across multiple trials</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/post_05/img4.png"
+        data-srcset="/post_05/img4.png, /post_05/img4.png 1.5x, /post_05/img4.png 2x"
+        data-sizes="auto"
+        alt="/post_05/img4.png"
+        title="1" width="2056" height="1224" /></p>
+<h3 id="-competitive-advantage">📈 Competitive Advantage</h3>
+<p>Compared to widely used grasping approaches:</p>
+<ul>
+<li>Similar accuracy</li>
+<li><strong>Order-of-magnitude faster execution</strong></li>
+<li>Explicit handling of <strong>non-graspable objects</strong>, reducing hardware damage risk</li>
+</ul>
+<h3 id="-practical-impact">🌍 Practical Impact</h3>
+<p>This project demonstrates how <strong>AI can be engineered—not just trained</strong>:</p>
+<ul>
+<li>Modular and robot-agnostic design</li>
+<li>Adaptable to different grippers and object sizes</li>
+<li>Suitable for <strong>industrial, service, and research robotics</strong></li>
+</ul>
+<hr>
+<h2 id="-links">📎 Links</h2></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2026-01-27</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="/posts/post_05/" data-title="Robotic Grasping Using Evolutionary Deep Neural Networks" data-hashtags="Robotics,Deep Learning,Computer Vision,PSO,Grasping"><i class="fab fa-x-twitter" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="/posts/post_05/" data-title="Robotic Grasping Using Evolutionary Deep Neural Networks"><i class="fab fa-threads" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/post_05/" data-hashtag="Robotics"><i class="fab fa-facebook-square" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/posts/post_05/" data-title="Robotic Grasping Using Evolutionary Deep Neural Networks"><i class="fab fa-hacker-news" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/post_05/" data-title="Robotic Grasping Using Evolutionary Deep Neural Networks"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@16.9.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/posts/post_05/" data-title="Robotic Grasping Using Evolutionary Deep Neural Networks" data-image="post_05/cover.png"><i class="fab fa-weibo" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Diaspora" data-sharer="diaspora" data-url="/posts/post_05/" data-title="Robotic Grasping Using Evolutionary Deep Neural Networks" data-description=""><i class="fab fa-diaspora" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=%2fposts%2fpost_05%2f&amp;text=Robotic%20Grasping%20Using%20Evolutionary%20Deep%20Neural%20Networks" target="_blank" title="Share on Telegram"><i class="fab fa-telegram" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<a href="/tags/robotics/">Robotics</a>,&nbsp;<a href="/tags/deep-learning/">Deep Learning</a>,&nbsp;<a href="/tags/computer-vision/">Computer Vision</a>,&nbsp;<a href="/tags/pso/">PSO</a>,&nbsp;<a href="/tags/grasping/">Grasping</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/post_04/" class="prev" rel="prev" title="Robotic Controllers &amp; Vision-Guided Manipulation"><i class="fas fa-angle-left" aria-hidden="true"></i>Robotic Controllers & Vision-Guided Manipulation</a>
+            <a href="/posts/post_06/" class="next" rel="next" title="Deep Learning-Driven Robotic Plastic Waste Sorter">Deep Learning-Driven Robotic Plastic Waste Sorter<i class="fas fa-angle-right" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Andres Gaona</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment" aria-hidden="true"></i>
+            </a>
+        </div><script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.2/sharer.min.js"></script><script>window.config={"comment":{}};</script><script src="/js/theme.js"></script></body>
+</html>

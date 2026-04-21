@@ -1,0 +1,28 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Deep Learning - Tag - AG website</title>
+        <link>/tags/deep-learning/</link>
+        <description>Deep Learning - Tag - AG website</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>adgaona7@gmail.com (Andres Gaona)</managingEditor>
+            <webMaster>adgaona7@gmail.com (Andres Gaona)</webMaster><lastBuildDate>Tue, 27 Jan 2026 17:00:12 &#43;0800</lastBuildDate><atom:link href="/tags/deep-learning/" rel="self" type="application/rss+xml" /><item>
+    <title>Deep Learning-Driven Robotic Plastic Waste Sorter</title>
+    <link>/posts/post_06/</link>
+    <pubDate>Tue, 27 Jan 2026 17:00:12 &#43;0800</pubDate>
+    <author>adgaona7@gmail.com (Andres Gaona)</author>
+    <guid>/posts/post_06/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/post_06/cover.png" referrerpolicy="no-referrer">
+            </div><p>A high-speed robotic system for real-time plastic waste detection, classification, and picking using YOLOv4 and delta robot control.</p>]]></description>
+</item>
+<item>
+    <title>Robotic Grasping Using Evolutionary Deep Neural Networks</title>
+    <link>/posts/post_05/</link>
+    <pubDate>Tue, 27 Jan 2026 16:54:19 &#43;0800</pubDate>
+    <author>adgaona7@gmail.com (Andres Gaona)</author>
+    <guid>/posts/post_05/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/post_05/cover.png" referrerpolicy="no-referrer">
+            </div><p>AI-based robotic grasping system combining deep neural networks and evolutionary optimization for robust object grasp estimation.</p>]]></description>
+</item>
+</channel>
+</rss>

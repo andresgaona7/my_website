@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Bio-Inspired Robots (Bionic Panda) - AG website</title><meta name="Description" content="This is my cool site"><meta property="og:url" content="/posts/post_10/">
+  <meta property="og:site_name" content="AG website">
+  <meta property="og:title" content="Bio-Inspired Robots (Bionic Panda)">
+  <meta property="og:description" content="High-fidelity simulation and real-time control of a bio-inspired panda robot with torque control, MPC/WBC locomotion, and autonomous behaviors.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-01-27T17:21:21+08:00">
+    <meta property="article:modified_time" content="2026-01-27T17:21:21+08:00">
+    <meta property="article:tag" content="Bionic Robotics">
+    <meta property="article:tag" content="Legged Robots">
+    <meta property="article:tag" content="Torque Control">
+    <meta property="article:tag" content="Model Predictive Control">
+    <meta property="article:tag" content="Whole-Body Control">
+    <meta property="article:tag" content="ROS">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Bio-Inspired Robots (Bionic Panda)">
+  <meta name="twitter:description" content="High-fidelity simulation and real-time control of a bio-inspired panda robot with torque control, MPC/WBC locomotion, and autonomous behaviors.">
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site">
+<meta name="referrer" content="no-referrer" /><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/post_10/" /><link rel="prev" href="/posts/post_09/" /><link rel="next" href="/posts/post_11/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Bio-Inspired Robots (Bionic Panda)",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/posts\/post_10\/"
+        },"genre": "posts","keywords": "Bionic robotics, Legged robots, Torque control, Model predictive control, Whole-body control, ROS, Simulation","wordcount":  453 ,
+        "url": "\/posts\/post_10\/","datePublished": "2026-01-27T17:21:21+08:00","dateModified": "2026-01-27T17:21:21+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Andrés Gaona"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>
+          const query = window.matchMedia('(prefers-color-scheme: dark)');
+          function applyTheme() {
+            let theme = window.localStorage?.getItem('theme') || 'auto';
+            let isDark = theme === 'dark' || (theme === 'auto' && query.matches);
+            document.body.setAttribute('theme', isDark? 'dark' : 'light');
+            document.body.setAttribute('cfg-theme', theme);
+          }
+
+          applyTheme();
+          query.addEventListener('change', applyTheme);
+        </script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="AG website">Andrés Gaona</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/about/">🫆 About me </a><a class="menu-item" href="/posts/">📚 Posts </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="AG website">Andrés Gaona</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/about/" title="">🫆About me</a><a class="menu-item" href="/posts/" title="">📚Posts</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Bio-Inspired Robots (Bionic Panda)</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle" aria-hidden="true"></i>Andrés Gaona</a></span>&nbsp;<span class="post-category">included in <a href="/categories/four-legged-robotics/"><i class="far fa-folder" aria-hidden="true"></i>Four-Legged Robotics</a>&nbsp;<a href="/categories/artificial-intelligence/"><i class="far fa-folder" aria-hidden="true"></i>Artificial Intelligence</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;<time datetime="2026-01-27">2026-01-27</time>&nbsp;<i class="fas fa-pencil-alt" aria-hidden="true"></i>&nbsp;453 words&nbsp;
+                <i class="far fa-clock" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/post_10/cover.png"
+        data-srcset="/post_10/cover.png, /post_10/cover.png 1.5x, /post_10/cover.png 2x"
+        data-sizes="auto"
+        alt="/post_10/cover.png"
+        title="/post_10/cover.png" width="3000" height="1000" /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview--challenges">Overview &amp; Challenges</a></li>
+    <li><a href="#-project-description">🚀 Project Description</a></li>
+    <li><a href="#-key-contributions">🛠️ Key Contributions</a>
+      <ul>
+        <li><a href="#-control--simulation-architecture">🔹 Control &amp; Simulation Architecture</a></li>
+        <li><a href="#-torque-mode-integration">🔹 Torque-Mode Integration</a></li>
+        <li><a href="#-state-machines--smooth-motion-transitions">🔹 State Machines &amp; Smooth Motion Transitions</a></li>
+        <li><a href="#-advanced-behaviors">🔹 Advanced Behaviors</a></li>
+        <li><a href="#-system-integration--testing">🔹 System Integration &amp; Testing</a></li>
+      </ul>
+    </li>
+    <li><a href="#-results--impact">📊 Results &amp; Impact</a>
+      <ul>
+        <li><a href="#-performance--reliability">✔️ Performance &amp; Reliability</a></li>
+        <li><a href="#-control-quality">✔️ Control Quality</a></li>
+        <li><a href="#-advanced-capability-demonstrations">✔️ Advanced Capability Demonstrations</a></li>
+        <li><a href="#-scalable-architecture-for-future-work">✔️ Scalable Architecture for Future Work</a></li>
+      </ul>
+    </li>
+    <li><a href="#-links">📎 Links</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>High-fidelity simulation and real-time control of a bio-inspired panda robot with torque control, MPC/WBC locomotion, and autonomous behaviors.</p>
+<h2 id="overview--challenges">Overview &amp; Challenges</h2>
+<p>Bio-Inspired Robots are an ambitious R&amp;D initiative aimed at pushing the boundaries of quadrupedal robotics — combining high-fidelity simulation, real-time torque control, and advanced autonomous behaviors to build a truly capable bio-inspired panda robot.</p>
+<p>The core challenges were:</p>
+<ul>
+<li>Simulating and controlling a complex quadruped with realistic dynamics</li>
+<li>Synchronizing high-level planning with low-level real-time control</li>
+<li>Implementing robust torque-based control under disturbances</li>
+<li>Enabling advanced behaviors like balance recovery, climbing, and autonomy</li>
+<li>Ensuring long-duration stability in real-world tests</li>
+</ul>
+<p>This project demanded both software engineering excellence and applied robotic systems expertise — from simulation to real-world deployment.</p>
+<hr>
+<h2 id="-project-description">🚀 Project Description</h2>
+<p>This project bridges the gap between simulation and physical hardware for a bio-inspired robot with highly dynamic behaviors. We built scalable control architecture using ROS and the OSC2 control framework, enabling the robot to balance, adapt to disturbances, climb structures, and make autonomous decisions. In some scenarios, reinforcement learning was used to mimic some realistic behavior.</p>
+<p>We focused on:</p>
+<ul>
+<li>Realistic physics and torque control</li>
+<li>Low-level actuation with minimal latency</li>
+<li>Smooth state transitions and motion coordination</li>
+<li>Integration of whole-body control and AI-based decision-making</li>
+</ul>
+<p>This wasn’t just about making a robot walk — it was about making it walk well, adaptively, and continuously in real environments.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/post_10/img0.gif"
+        data-srcset="/post_10/img0.gif, /post_10/img0.gif 1.5x, /post_10/img0.gif 2x"
+        data-sizes="auto"
+        alt="/post_10/img0.gif"
+        title="0" width="492" height="646" /></p>
+<hr>
+<h2 id="-key-contributions">🛠️ Key Contributions</h2>
+<p>Throughout the project, I led and delivered on the following core technical achievements:</p>
+<h3 id="-control--simulation-architecture">🔹 Control &amp; Simulation Architecture</h3>
+<ul>
+<li>
+<p>Designed and implemented a dynamic simulation + control framework for a bio-inspired quadruped.</p>
+</li>
+<li>
+<p>Ensured high-fidelity simulation matched real-world robot behavior.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/post_10/img1.gif"
+        data-srcset="/post_10/img1.gif, /post_10/img1.gif 1.5x, /post_10/img1.gif 2x"
+        data-sizes="auto"
+        alt="/post_10/img1.gif"
+        title="1" width="413" height="284" /></p>
+</li>
+</ul>
+<h3 id="-torque-mode-integration">🔹 Torque-Mode Integration</h3>
+<ul>
+<li>Developed torque-based control seamlessly tied into high-level locomotion planning.</li>
+<li>Achieved precise torque tracking with low latency (&lt;10 ms and high actuation accuracy (&gt;90%).</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/post_10/img2.gif"
+        data-srcset="/post_10/img2.gif, /post_10/img2.gif 1.5x, /post_10/img2.gif 2x"
+        data-sizes="auto"
+        alt="/post_10/img2.gif"
+        title="2" width="1106" height="675" /></p>
+<h3 id="-state-machines--smooth-motion-transitions">🔹 State Machines &amp; Smooth Motion Transitions</h3>
+<ul>
+<li>Built modular state machines for motion coordination.</li>
+<li>Created interpolation systems for smooth, jerk-free transitions between behaviors.</li>
+</ul>
+<h3 id="-advanced-behaviors">🔹 Advanced Behaviors</h3>
+<ul>
+<li>Engineered and validated tree-climbing mechanisms with high grip control and safety margins.</li>
+<li>Led integration of AI-based autonomous decision-making for motion selection and environmental interaction (~85% accuracy in tests).</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/post_10/img3.gif"
+        data-srcset="/post_10/img3.gif, /post_10/img3.gif 1.5x, /post_10/img3.gif 2x"
+        data-sizes="auto"
+        alt="/post_10/img3.gif"
+        title="3" width="877" height="595" /></p>
+<h3 id="-system-integration--testing">🔹 System Integration &amp; Testing</h3>
+<ul>
+<li>Completed full-stack integration with long-duration stability validation.</li>
+<li>Addressed issues rapidly, achieving &gt;90% resolution during testing cycles.</li>
+</ul>
+<hr>
+<h2 id="-results--impact">📊 Results &amp; Impact</h2>
+<p>The outcomes of this work demonstrate real technical impact:</p>
+<h3 id="-performance--reliability">✔️ Performance &amp; Reliability</h3>
+<ul>
+<li>1+ hour of continuous robot operation with no system crashes</li>
+<li>~90% success rate in real-world tests</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/post_10/img4.gif"
+        data-srcset="/post_10/img4.gif, /post_10/img4.gif 1.5x, /post_10/img4.gif 2x"
+        data-sizes="auto"
+        alt="/post_10/img4.gif"
+        title="4" width="486" height="533" /></p>
+<h3 id="-control-quality">✔️ Control Quality</h3>
+<ul>
+<li>Smooth motion control with effective torque tracking</li>
+<li>Robust performance under disturbances and dynamic transitions</li>
+</ul>
+<h3 id="-advanced-capability-demonstrations">✔️ Advanced Capability Demonstrations</h3>
+<ul>
+<li>Stable torque-controlled locomotion</li>
+<li>Bio-inspired climbing and balance strategies validated experimentally</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/post_10/img5.gif"
+        data-srcset="/post_10/img5.gif, /post_10/img5.gif 1.5x, /post_10/img5.gif 2x"
+        data-sizes="auto"
+        alt="/post_10/img5.gif"
+        title="5" width="710" height="668" /></p>
+<h3 id="-scalable-architecture-for-future-work">✔️ Scalable Architecture for Future Work</h3>
+<ul>
+<li>Modular and extensible control framework designed for next-generation autonomous legged robots</li>
+<li>Foundations laid for more sophisticated autonomous behaviors</li>
+</ul>
+<hr>
+<h2 id="-links">📎 Links</h2></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2026-01-27</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="/posts/post_10/" data-title="Bio-Inspired Robots (Bionic Panda)" data-hashtags="Bionic robotics,Legged robots,Torque control,Model predictive control,Whole-body control,ROS,Simulation"><i class="fab fa-x-twitter" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="/posts/post_10/" data-title="Bio-Inspired Robots (Bionic Panda)"><i class="fab fa-threads" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/post_10/" data-hashtag="Bionic robotics"><i class="fab fa-facebook-square" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/posts/post_10/" data-title="Bio-Inspired Robots (Bionic Panda)"><i class="fab fa-hacker-news" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/post_10/" data-title="Bio-Inspired Robots (Bionic Panda)"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@16.9.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/posts/post_10/" data-title="Bio-Inspired Robots (Bionic Panda)" data-image="post_10/cover.png"><i class="fab fa-weibo" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Diaspora" data-sharer="diaspora" data-url="/posts/post_10/" data-title="Bio-Inspired Robots (Bionic Panda)" data-description=""><i class="fab fa-diaspora" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=%2fposts%2fpost_10%2f&amp;text=Bio-Inspired%20Robots%20%28Bionic%20Panda%29" target="_blank" title="Share on Telegram"><i class="fab fa-telegram" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<a href="/tags/bionic-robotics/">Bionic Robotics</a>,&nbsp;<a href="/tags/legged-robots/">Legged Robots</a>,&nbsp;<a href="/tags/torque-control/">Torque Control</a>,&nbsp;<a href="/tags/model-predictive-control/">Model Predictive Control</a>,&nbsp;<a href="/tags/whole-body-control/">Whole-Body Control</a>,&nbsp;<a href="/tags/ros/">ROS</a>,&nbsp;<a href="/tags/simulation/">Simulation</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/post_09/" class="prev" rel="prev" title="Four-Legged Robot Platform"><i class="fas fa-angle-left" aria-hidden="true"></i>Four-Legged Robot Platform</a>
+            <a href="/posts/post_11/" class="next" rel="next" title="Real-Time Multi-Vendor EtherCAT Motion Control (MCCL)">Real-Time Multi-Vendor EtherCAT Motion Control (MCCL)<i class="fas fa-angle-right" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Andres Gaona</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment" aria-hidden="true"></i>
+            </a>
+        </div><script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.2/sharer.min.js"></script><script>window.config={"comment":{}};</script><script src="/js/theme.js"></script></body>
+</html>

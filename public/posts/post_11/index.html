@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Real-Time Multi-Vendor EtherCAT Motion Control (MCCL) - AG website</title><meta name="Description" content="This is my cool site"><meta property="og:url" content="/posts/post_11/">
+  <meta property="og:site_name" content="AG website">
+  <meta property="og:title" content="Real-Time Multi-Vendor EtherCAT Motion Control (MCCL)">
+  <meta property="og:description" content="A real-time, multi-vendor EtherCAT motion control platform was developed to abstract vendor differences while ensuring deterministic, synchronized multi-axis motion.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-01-27T17:24:41+08:00">
+    <meta property="article:modified_time" content="2026-01-27T17:24:41+08:00">
+    <meta property="article:tag" content="MCCL">
+    <meta property="article:tag" content="EtherCAT">
+    <meta property="article:tag" content="Preset Tool">
+    <meta property="article:tag" content="Profile Position">
+    <meta property="article:tag" content="Control Synchronous Position">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Real-Time Multi-Vendor EtherCAT Motion Control (MCCL)">
+  <meta name="twitter:description" content="A real-time, multi-vendor EtherCAT motion control platform was developed to abstract vendor differences while ensuring deterministic, synchronized multi-axis motion.">
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site">
+<meta name="referrer" content="no-referrer" /><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/post_11/" /><link rel="prev" href="/posts/post_10/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Real-Time Multi-Vendor EtherCAT Motion Control (MCCL)",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/posts\/post_11\/"
+        },"genre": "posts","keywords": "MCCL, EtherCAT, Preset tool, Profile position, Control synchronous position","wordcount":  534 ,
+        "url": "\/posts\/post_11\/","datePublished": "2026-01-27T17:24:41+08:00","dateModified": "2026-01-27T17:24:41+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Andrés Gaona"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>
+          const query = window.matchMedia('(prefers-color-scheme: dark)');
+          function applyTheme() {
+            let theme = window.localStorage?.getItem('theme') || 'auto';
+            let isDark = theme === 'dark' || (theme === 'auto' && query.matches);
+            document.body.setAttribute('theme', isDark? 'dark' : 'light');
+            document.body.setAttribute('cfg-theme', theme);
+          }
+
+          applyTheme();
+          query.addEventListener('change', applyTheme);
+        </script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="AG website">Andrés Gaona</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/about/">🫆 About me </a><a class="menu-item" href="/posts/">📚 Posts </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="AG website">Andrés Gaona</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/about/" title="">🫆About me</a><a class="menu-item" href="/posts/" title="">📚Posts</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Real-Time Multi-Vendor EtherCAT Motion Control (MCCL)</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle" aria-hidden="true"></i>Andrés Gaona</a></span>&nbsp;<span class="post-category">included in <a href="/categories/motion-control-library/"><i class="far fa-folder" aria-hidden="true"></i>Motion Control Library</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;<time datetime="2026-01-27">2026-01-27</time>&nbsp;<i class="fas fa-pencil-alt" aria-hidden="true"></i>&nbsp;534 words&nbsp;
+                <i class="far fa-clock" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/post_11/cover.png"
+        data-srcset="/post_11/cover.png, /post_11/cover.png 1.5x, /post_11/cover.png 2x"
+        data-sizes="auto"
+        alt="/post_11/cover.png"
+        title="/post_11/cover.png" width="3000" height="1000" /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#-overview--challenges">🧠 Overview &amp; Challenges</a></li>
+    <li><a href="#-project-description">📦 Project Description</a></li>
+    <li><a href="#-key-contributions">⭐ Key Contributions</a>
+      <ul>
+        <li><a href="#1-multi-vendor-ethercat-compatibility-layer">1. <strong>Multi-Vendor EtherCAT Compatibility Layer</strong></a></li>
+        <li><a href="#2-preset-tool-sdk">2. <strong>Preset Tool SDK</strong></a></li>
+        <li><a href="#3-full-digital-motion-control-solution">3. <strong>Full Digital Motion Control Solution</strong></a></li>
+        <li><a href="#4-cross-functional-collaboration">4. <strong>Cross-Functional Collaboration</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#-results--impact">📈 Results &amp; Impact</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>A real-time, multi-vendor EtherCAT motion control platform was developed to abstract vendor differences while ensuring deterministic, synchronized multi-axis motion.</p>
+<h2 id="summary">Summary</h2>
+<p>A real-time, multi-vendor EtherCAT motion control solution was developed to remove vendor-specific complexity while preserving deterministic performance. The project centered on a scalable compatibility layer that unified 84 EtherCAT devices from different manufacturers under a single motion control API, with full support for standard CSP and PP motion modes. To accelerate deployment and reduce configuration errors, an automated preset tool was created to convert vendor ESI files into compliant ENI configurations, significantly reducing setup time. Running on an RTX-based real-time platform and implemented in C++, the system improved motion compatibility by ~20% and enabled reliable multi-axis synchronization. Beyond the technical outcomes, the solution supported customer adoption and contributed to a 100% increase in customer requests through close collaboration with international industrial partners.</p>
+<h2 id="-overview--challenges">🧠 Overview &amp; Challenges</h2>
+<p>In industrial automation, achieving deterministic, synchronized motion control across multiple EtherCAT vendors remains a major bottleneck. Each vendor’s device behaves slightly differently — inconsistencies in parameter mapping, configuration files, and motion modes make real-time integration complex, error-prone, and unscalable.</p>
+<p>The challenge of this project was to:</p>
+<ul>
+<li>Abstract away vendor differences without sacrificing performance.</li>
+<li>Build a scalable, real-time motion control stack that supports standard profiles like CoE, CSP, and PP.</li>
+<li>Enable seamless multi-axis synchronization with predictable timing.</li>
+<li>Reduce setup time and manual configuration errors across heterogeneous EtherCAT networks.</li>
+</ul>
+<hr>
+<h2 id="-project-description">📦 Project Description</h2>
+<p>This project delivered a full digital EtherCAT motion control solution built on a deterministic RTX-based platform in C++.</p>
+<p>The architecture consists of:</p>
+<ul>
+<li>MCCL API – High-level motion control interface used by applications.</li>
+<li>EcDriver – Low-level EtherCAT driver handling frame I/O, sync, and mode abstraction (CSP/PP).</li>
+<li>Preset Tool SDK – Automated device onboarding via ESI parsing and ENI generation.</li>
+<li>RTX Runtime – Hard real-time task execution to ensure predictable multi-axis behavior.</li>
+</ul>
+<p>Together, these technologies enable <em>plug-and-scale EtherCAT motion control</em> with consistent performance — eliminating vendor fragmentation while supporting industry-standard motion profiles.</p>
+<hr>
+<h2 id="-key-contributions">⭐ Key Contributions</h2>
+<h3 id="1-multi-vendor-ethercat-compatibility-layer">1. <strong>Multi-Vendor EtherCAT Compatibility Layer</strong></h3>
+<p>Designed and developed a unified abstraction that:</p>
+<ul>
+<li>Integrates 84 EtherCAT slave modules across multiple manufacturers.</li>
+<li>Normalizes discrepancies in CoE objects, sync behavior, and motion mode semantics.</li>
+<li>Provides a consistent API for motion applications.</li>
+</ul>
+<h3 id="2-preset-tool-sdk">2. <strong>Preset Tool SDK</strong></h3>
+<p>Created a configuration automation toolkit that:</p>
+<ul>
+<li>Parses vendor ESI files and generates compliant ENI configurations.</li>
+<li>Removes manual configurations and drastically reduces setup time.</li>
+<li>Minimizes human errors during device integration.</li>
+</ul>
+<h3 id="3-full-digital-motion-control-solution">3. <strong>Full Digital Motion Control Solution</strong></h3>
+<p>Delivered end-to-end support for real-time EtherCAT motion:</p>
+<ul>
+<li>Implemented CSP and PP mode support with standardized state transitions.</li>
+<li>Built scalable driver interfaces for adding new servo drives effortlessly.</li>
+<li>Improved system compatibility by ~20% through software-first solutions.</li>
+</ul>
+<h3 id="4-cross-functional-collaboration">4. <strong>Cross-Functional Collaboration</strong></h3>
+<p>Worked closely with:</p>
+<ul>
+<li>PCB and semiconductor partners in Malaysia</li>
+<li>Customer integration teams</li>
+</ul>
+<p>This collaboration increased adoption and drove a 100% growth in customer requests for motion solutions, turning technical capability into real-world demand.</p>
+<hr>
+<h2 id="-results--impact">📈 Results &amp; Impact</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Outcome</th>
+          <th>Impact</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>🔧 Multi-vendor support</td>
+          <td>Unified motion control across 84+ EtherCAT devices</td>
+      </tr>
+      <tr>
+          <td>⏱ Deterministic performance</td>
+          <td>Predictable, real-time multi-axis synchronization</td>
+      </tr>
+      <tr>
+          <td>🚀 Onboarding automation</td>
+          <td>Faster setup &amp; fewer errors from ESI → ENI generation</td>
+      </tr>
+      <tr>
+          <td>📊 Increased compatibility</td>
+          <td>~20% broader support for standard motion profiles</td>
+      </tr>
+      <tr>
+          <td>🤝 Customer growth</td>
+          <td>100% boost in customer requests through improved integration</td>
+      </tr>
+  </tbody>
+</table></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2026-01-27</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="/posts/post_11/" data-title="Real-Time Multi-Vendor EtherCAT Motion Control (MCCL)" data-hashtags="MCCL,EtherCAT,Preset tool,Profile position,Control synchronous position"><i class="fab fa-x-twitter" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="/posts/post_11/" data-title="Real-Time Multi-Vendor EtherCAT Motion Control (MCCL)"><i class="fab fa-threads" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/post_11/" data-hashtag="MCCL"><i class="fab fa-facebook-square" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/posts/post_11/" data-title="Real-Time Multi-Vendor EtherCAT Motion Control (MCCL)"><i class="fab fa-hacker-news" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/post_11/" data-title="Real-Time Multi-Vendor EtherCAT Motion Control (MCCL)"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@16.9.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/posts/post_11/" data-title="Real-Time Multi-Vendor EtherCAT Motion Control (MCCL)" data-image="post_11/cover.png"><i class="fab fa-weibo" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Diaspora" data-sharer="diaspora" data-url="/posts/post_11/" data-title="Real-Time Multi-Vendor EtherCAT Motion Control (MCCL)" data-description=""><i class="fab fa-diaspora" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=%2fposts%2fpost_11%2f&amp;text=Real-Time%20Multi-Vendor%20EtherCAT%20Motion%20Control%20%28MCCL%29" target="_blank" title="Share on Telegram"><i class="fab fa-telegram" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<a href="/tags/mccl/">MCCL</a>,&nbsp;<a href="/tags/ethercat/">EtherCAT</a>,&nbsp;<a href="/tags/preset-tool/">Preset Tool</a>,&nbsp;<a href="/tags/profile-position/">Profile Position</a>,&nbsp;<a href="/tags/control-synchronous-position/">Control Synchronous Position</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/post_10/" class="prev" rel="prev" title="Bio-Inspired Robots (Bionic Panda)"><i class="fas fa-angle-left" aria-hidden="true"></i>Bio-Inspired Robots (Bionic Panda)</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Andres Gaona</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment" aria-hidden="true"></i>
+            </a>
+        </div><script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.2/sharer.min.js"></script><script>window.config={"comment":{}};</script><script src="/js/theme.js"></script></body>
+</html>

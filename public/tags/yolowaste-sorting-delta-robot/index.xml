@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>YOLOWaste Sorting&#34;, &#34;Delta Robot&#34; on Andres Gaona</title>
+    <link>http://localhost:1313/tags/yolowaste-sorting-delta-robot/</link>
+    <description>Recent content in YOLOWaste Sorting&#34;, &#34;Delta Robot&#34; on Andres Gaona</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 27 Jan 2026 17:00:12 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/yolowaste-sorting-delta-robot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deep Learning–Based Robotic Waste Classification</title>
+      <link>http://localhost:1313/posts/post_06/</link>
+      <pubDate>Tue, 27 Jan 2026 17:00:12 +0800</pubDate>
+      <guid>http://localhost:1313/posts/post_06/</guid>
+      <description>&lt;p&gt;A high-speed robotic system for real-time plastic waste detection, classification, and picking using YOLOv4 and delta robot control.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

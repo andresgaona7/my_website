@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Control Synchroni on Andres Gaona</title>
+    <link>http://localhost:1313/tags/control-synchroni/</link>
+    <description>Recent content in Control Synchroni on Andres Gaona</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 27 Jan 2026 17:24:41 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/control-synchroni/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Motion Control Compatibility Library (MCCL)</title>
+      <link>http://localhost:1313/posts/post_11/</link>
+      <pubDate>Tue, 27 Jan 2026 17:24:41 +0800</pubDate>
+      <guid>http://localhost:1313/posts/post_11/</guid>
+      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

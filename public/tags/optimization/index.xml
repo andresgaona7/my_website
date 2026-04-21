@@ -1,0 +1,18 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Optimization - Tag - AG website</title>
+        <link>/tags/optimization/</link>
+        <description>Optimization - Tag - AG website</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>adgaona7@gmail.com (Andres Gaona)</managingEditor>
+            <webMaster>adgaona7@gmail.com (Andres Gaona)</webMaster><lastBuildDate>Tue, 27 Jan 2026 16:43:08 &#43;0800</lastBuildDate><atom:link href="/tags/optimization/" rel="self" type="application/rss+xml" /><item>
+    <title>Smart Tuning Technology</title>
+    <link>/posts/post_03/</link>
+    <pubDate>Tue, 27 Jan 2026 16:43:08 &#43;0800</pubDate>
+    <author>adgaona7@gmail.com (Andres Gaona)</author>
+    <guid>/posts/post_03/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/post_03/cover.png" referrerpolicy="no-referrer">
+            </div><p><strong>Smart Tuning Technology</strong> automates controller and servo driver tuning using optimization algorithms and sensor feedback, enabling fast and reliable parameter tuning across platforms.</p>]]></description>
+</item>
+</channel>
+</rss>

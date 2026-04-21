@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Smart Tuning Technology - AG website</title><meta name="Description" content="This is my cool site"><meta property="og:url" content="/posts/post_03/">
+  <meta property="og:site_name" content="AG website">
+  <meta property="og:title" content="Smart Tuning Technology">
+  <meta property="og:description" content="Smart Tuning Technology automates controller and servo driver tuning using optimization algorithms and sensor feedback, enabling fast and reliable parameter tuning across platforms.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-01-27T16:43:08+08:00">
+    <meta property="article:modified_time" content="2026-01-27T16:43:08+08:00">
+    <meta property="article:tag" content="Control Systems">
+    <meta property="article:tag" content="Optimization">
+    <meta property="article:tag" content="Motion Control">
+    <meta property="article:tag" content="PSO">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Smart Tuning Technology">
+  <meta name="twitter:description" content="Smart Tuning Technology automates controller and servo driver tuning using optimization algorithms and sensor feedback, enabling fast and reliable parameter tuning across platforms.">
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site">
+<meta name="referrer" content="no-referrer" /><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/post_03/" /><link rel="prev" href="/posts/post_02/" /><link rel="next" href="/posts/post_04/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Smart Tuning Technology",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/posts\/post_03\/"
+        },"genre": "posts","keywords": "Control systems, Optimization, Motion control, PSO","wordcount":  466 ,
+        "url": "\/posts\/post_03\/","datePublished": "2026-01-27T16:43:08+08:00","dateModified": "2026-01-27T16:43:08+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Andrés Gaona"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>
+          const query = window.matchMedia('(prefers-color-scheme: dark)');
+          function applyTheme() {
+            let theme = window.localStorage?.getItem('theme') || 'auto';
+            let isDark = theme === 'dark' || (theme === 'auto' && query.matches);
+            document.body.setAttribute('theme', isDark? 'dark' : 'light');
+            document.body.setAttribute('cfg-theme', theme);
+          }
+
+          applyTheme();
+          query.addEventListener('change', applyTheme);
+        </script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="AG website">Andrés Gaona</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/about/">🫆 About me </a><a class="menu-item" href="/posts/">📚 Posts </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="AG website">Andrés Gaona</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/about/" title="">🫆About me</a><a class="menu-item" href="/posts/" title="">📚Posts</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Smart Tuning Technology</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle" aria-hidden="true"></i>Andrés Gaona</a></span>&nbsp;<span class="post-category">included in <a href="/categories/control-sytems/"><i class="far fa-folder" aria-hidden="true"></i>Control Sytems</a>&nbsp;<a href="/categories/optimization/"><i class="far fa-folder" aria-hidden="true"></i>Optimization</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt" aria-hidden="true"></i>&nbsp;<time datetime="2026-01-27">2026-01-27</time>&nbsp;<i class="fas fa-pencil-alt" aria-hidden="true"></i>&nbsp;466 words&nbsp;
+                <i class="far fa-clock" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/post_03/cover.png"
+        data-srcset="/post_03/cover.png, /post_03/cover.png 1.5x, /post_03/cover.png 2x"
+        data-sizes="auto"
+        alt="/post_03/cover.png"
+        title="/post_03/cover.png" width="3000" height="1000" /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#-overview--challenges">🌟 Overview &amp; Challenges</a></li>
+    <li><a href="#-what-the-system-does">🧠 What the System Does</a></li>
+    <li><a href="#-my-contributions">💡 My Contributions</a>
+      <ul>
+        <li><a href="#-system-and-framework-design">🚀 System and Framework Design</a></li>
+        <li><a href="#-servo-tuning-application">🛠 Servo Tuning Application</a></li>
+        <li><a href="#-integration--apis">🔌 Integration &amp; APIs</a></li>
+        <li><a href="#-visualization--ux">📊 Visualization &amp; UX</a></li>
+      </ul>
+    </li>
+    <li><a href="#-results--impact">📈 Results &amp; Impact</a></li>
+    <li><a href="#-links">🔗 Links</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p><strong>Smart Tuning Technology</strong> automates controller and servo driver tuning using optimization algorithms and sensor feedback, enabling fast and reliable parameter tuning across platforms.</p>
+<h1 id="project-summary">Project Summary</h1>
+<h2 id="-overview--challenges">🌟 Overview &amp; Challenges</h2>
+<p><strong>Smart Tuning Technology</strong> is an automated controller and servo driver tuning system built to solve a persistent challenge in robotics and motion control: <strong>manual tuning bottlenecks</strong>. Across different hardware platforms and application scenarios, controller tuning traditionally requires deep expert insight and hours of trial and error. The goal of this project was to <strong>eliminate that dependency</strong> by delivering an <strong>intuitive, scalable, automated optimization framework</strong> that produces reliable, high-quality parameters with minimal human intervention.</p>
+<p>This system targets the universal pain point of <em>slow, inconsistent tuning workflows</em> — transforming them into <strong>fast, repeatable, and robust optimization processes</strong>.</p>
+<hr>
+<h2 id="-what-the-system-does">🧠 What the System Does</h2>
+<p>At its core, Smart Tuning Technology <strong>automates parameter tuning</strong> for controllers and servo drivers by integrating:</p>
+<ul>
+<li><strong>Optimization algorithms</strong> that adapt settings based on real-time sensor data</li>
+<li><strong>Sensor feedback loops</strong> to quantify performance and refine tuning</li>
+<li><strong>Real-time visualization</strong> to track optimization progress and solution quality</li>
+<li><strong>Cross-platform APIs</strong> enabling seamless integration with different control systems</li>
+</ul>
+<p>Users can run automated tuning sessions, visualize performance evolution, monitor sensor spectra in real time, and interact with optimization charts — all without deep manual configuration.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/post_03/img1.gif"
+        data-srcset="/post_03/img1.gif, /post_03/img1.gif 1.5x, /post_03/img1.gif 2x"
+        data-sizes="auto"
+        alt="/post_03/img1.gif"
+        title="1" width="957" height="639" /></p>
+<hr>
+<h2 id="-my-contributions">💡 My Contributions</h2>
+<p>I was responsible for architecting and building the core components of the system — from backend optimization logic to interactive frontend insights:</p>
+<h3 id="-system-and-framework-design">🚀 System and Framework Design</h3>
+<ul>
+<li>Designed and developed a <strong>cross-platform, scalable optimization framework</strong> that supports multiple motion control backends.</li>
+<li>Built an <strong>objective function engine</strong> that translates sensor feedback into meaningful performance metrics for the optimizer.</li>
+</ul>
+<h3 id="-servo-tuning-application">🛠 Servo Tuning Application</h3>
+<ul>
+<li>Implemented a <strong>servo driver tuning application</strong> as a real-world case study, validating our framework end-to-end.</li>
+<li>Integrated <strong>safe execution controls</strong> such as motor homing, emergency stop, and parameter locking during runs.</li>
+</ul>
+<h3 id="-integration--apis">🔌 Integration &amp; APIs</h3>
+<ul>
+<li>Developed a <strong>modular and extensible API layer</strong>, enabling the system to plug into diverse motion control infrastructures with minimal adaptation.</li>
+<li>Enabled seamless sensor data acquisition, smoothing, and real-time spectrum tracking.</li>
+</ul>
+<h3 id="-visualization--ux">📊 Visualization &amp; UX</h3>
+<ul>
+<li>Built dynamic charts to show <strong>optimization evolution</strong>, cost vs. variables, and iteration histories.</li>
+<li>Delivered real-time sensor spectrum displays with interactive exploration tools (zoom, windowing, drag).</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/post_03/img2.png"
+        data-srcset="/post_03/img2.png, /post_03/img2.png 1.5x, /post_03/img2.png 2x"
+        data-sizes="auto"
+        alt="/post_03/img2.png"
+        title="2" width="2920" height="1656" /></p>
+<hr>
+<h2 id="-results--impact">📈 Results &amp; Impact</h2>
+<p>This project brought measurable improvements to how tuning is done:</p>
+<ul>
+<li>🕒 <strong>Reduced tuning time from hours to minutes</strong> — dramatically increasing engineering productivity.</li>
+<li>🔁 <strong>Consistent, repeatable tuning results</strong> — less variability across platforms and conditions.</li>
+<li>🤖 <strong>Lower dependency on expert manual tuning</strong> — enabling teams of varying skill levels to achieve optimal settings.</li>
+<li>📊 <strong>Better insights for teams</strong> — real-time visuals improved transparency into performance limits and optimization behavior.</li>
+</ul>
+<p><strong>Smart Tuning Technology</strong> turned a traditionally manual, expertise-intensive process into a <strong>scalable automated workflow</strong>, delivering tangible gains in speed, consistency, and usability for motion control systems.</p>
+<hr>
+<h2 id="-links">🔗 Links</h2></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2026-01-27</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="/posts/post_03/" data-title="Smart Tuning Technology" data-hashtags="Control systems,Optimization,Motion control,PSO"><i class="fab fa-x-twitter" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="/posts/post_03/" data-title="Smart Tuning Technology"><i class="fab fa-threads" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/post_03/" data-hashtag="Control systems"><i class="fab fa-facebook-square" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/posts/post_03/" data-title="Smart Tuning Technology"><i class="fab fa-hacker-news" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/post_03/" data-title="Smart Tuning Technology"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@16.9.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/posts/post_03/" data-title="Smart Tuning Technology" data-image="post_03/cover.png"><i class="fab fa-weibo" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Diaspora" data-sharer="diaspora" data-url="/posts/post_03/" data-title="Smart Tuning Technology" data-description=""><i class="fab fa-diaspora" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=%2fposts%2fpost_03%2f&amp;text=Smart%20Tuning%20Technology" target="_blank" title="Share on Telegram"><i class="fab fa-telegram" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<a href="/tags/control-systems/">Control Systems</a>,&nbsp;<a href="/tags/optimization/">Optimization</a>,&nbsp;<a href="/tags/motion-control/">Motion Control</a>,&nbsp;<a href="/tags/pso/">PSO</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/post_02/" class="prev" rel="prev" title="Intelligent AR/VR Robot Arm Teaching Technology"><i class="fas fa-angle-left" aria-hidden="true"></i>Intelligent AR/VR Robot Arm Teaching Technology</a>
+            <a href="/posts/post_04/" class="next" rel="next" title="Robotic Controllers &amp; Vision-Guided Manipulation">Robotic Controllers & Vision-Guided Manipulation<i class="fas fa-angle-right" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Andres Gaona</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment" aria-hidden="true"></i>
+            </a>
+        </div><script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.2/sharer.min.js"></script><script>window.config={"comment":{}};</script><script src="/js/theme.js"></script></body>
+</html>

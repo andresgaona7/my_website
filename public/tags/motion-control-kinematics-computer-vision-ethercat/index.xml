@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Motion Control&#34;, &#34;Kinematics&#34;, &#34;Computer Vision&#34;, &#34;EtherCAT&#34; on Andres Gaona</title>
+    <link>http://localhost:1313/tags/motion-control-kinematics-computer-vision-ethercat/</link>
+    <description>Recent content in Motion Control&#34;, &#34;Kinematics&#34;, &#34;Computer Vision&#34;, &#34;EtherCAT&#34; on Andres Gaona</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 27 Jan 2026 16:49:02 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/motion-control-kinematics-computer-vision-ethercat/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Robotic Controllers &amp; Vision-Guided Manipulation</title>
+      <link>http://localhost:1313/posts/post_04/</link>
+      <pubDate>Tue, 27 Jan 2026 16:49:02 +0800</pubDate>
+      <guid>http://localhost:1313/posts/post_04/</guid>
+      <description>&lt;p&gt;Development of real-time robotic controllers integrating forward/inverse kinematics, EtherCAT motion control, and AI-based object detection for industrial manipulation.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

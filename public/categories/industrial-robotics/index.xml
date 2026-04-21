@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Industrial Robotics - Category - My website</title>
+        <link>//localhost:1313/categories/industrial-robotics/</link>
+        <description>Industrial Robotics - Category - My website</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>adgaona7@gmail.com (Andres Gaona)</managingEditor>
+            <webMaster>adgaona7@gmail.com (Andres Gaona)</webMaster><lastBuildDate>Mon, 26 Jan 2026 19:25:15 &#43;0800</lastBuildDate><atom:link href="//localhost:1313/categories/industrial-robotics/" rel="self" type="application/rss+xml" /><item>
+    <title>Robotic Arm Automatic Path Generation Technology</title>
+    <link>//localhost:1313/posts/post_01/</link>
+    <pubDate>Mon, 26 Jan 2026 19:25:15 &#43;0800</pubDate>
+    <author>adgaona7@gmail.com (Andres Gaona)</author>
+    <guid>//localhost:1313/posts/post_01/</guid>
+    <description><![CDATA[<p>Automated path generation using point cloud data with MCCL-compatible motion output, reducing robot programming time.</p>]]></description>
+</item>
+</channel>
+</rss>
