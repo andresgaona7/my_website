@@ -165,9 +165,6 @@ other = "Resumen"
 [info]
 other = "Información"
 
-[todo]
-other = "Pendiente"
-
 [tip]
 other = "Consejo"
 

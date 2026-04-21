@@ -164,10 +164,7 @@ other = "摘要"
 other = "信息"
 
 [tip]
-other = "提示"
-
-[todo]
-other = "待辦"
+other = "技巧"
 
 [success]
 other = "成功"
