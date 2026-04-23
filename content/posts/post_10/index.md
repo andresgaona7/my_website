@@ -63,6 +63,10 @@ This wasn’t just about making a robot walk — it was about making it walk wel
   <source src="img0.mp4" type="video/mp4">
 </video>
 
+<video controls width="100%">
+  <source src="post_10/img0.mp4" type="video/mp4">
+</video>
+
 
 <p style="color:red;">TEST VIDEO HERE</p>
 
