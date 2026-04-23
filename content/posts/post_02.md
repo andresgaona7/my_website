@@ -2,7 +2,7 @@
 title: Intelligent AR/VR Robot Arm Teaching Technology
 date: 2026-01-27T14:50:15+08:00
 author: Andrés Gaona
-featuredImage: post_02/cover.png
+featuredImage: post_02/cover.webp
 categories:
   - Human-robot interaction
   - Robotics
@@ -34,7 +34,7 @@ This project tackles those limitations by introducing an **intelligent virtual t
 - Designing an intuitive human–robot interaction interface  
 - Ensuring reliable transfer from virtual trajectories to real-world execution  
 
-![1](post_02/img1.png)
+![1](post_02/img1.webp)
 
 ---
 
@@ -66,7 +66,7 @@ I was directly responsible for the **core technical implementation** of the syst
 
 This required combining **robotics theory, real-time control, and software engineering** into a single robust system.
 
-![2](post_02/img2.png)
+![2](post_02/img2.webp)
 
 ---
 
@@ -83,7 +83,7 @@ This required combining **robotics theory, real-time control, and software engin
 - Lowers the entry barrier for complex robot programming  
 - Opens the door to more intuitive human–robot collaboration in industrial environments  
 
-![3](post_02/img3.png)
+![3](post_02/img3.webp)
 
 ---
 

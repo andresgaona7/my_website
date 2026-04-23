@@ -2,7 +2,7 @@
 title: Smart Tuning Technology
 date: 2026-01-27T16:43:08+08:00
 author: Andrés Gaona
-featuredImage: post_03/cover.png
+featuredImage: post_03/cover.webp
 categories:
   - Control sytems
   - Optimization
@@ -39,7 +39,7 @@ At its core, Smart Tuning Technology **automates parameter tuning** for controll
 
 Users can run automated tuning sessions, visualize performance evolution, monitor sensor spectra in real time, and interact with optimization charts — all without deep manual configuration.
 
-![1](post_03/img1.gif)
+![1](post_03/img1.mp4)
 
 ---
 
@@ -63,7 +63,7 @@ I was responsible for architecting and building the core components of the syste
 - Built dynamic charts to show **optimization evolution**, cost vs. variables, and iteration histories.
 - Delivered real-time sensor spectrum displays with interactive exploration tools (zoom, windowing, drag).
 
-![2](post_03/img2.png)
+![2](post_03/img2.webp)
 
 ---
 

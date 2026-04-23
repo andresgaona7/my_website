@@ -2,7 +2,7 @@
 title: Robotic Arm Automatic Path Generation Technology
 date: 2026-01-26T19:25:15+08:00
 author: Andrés Gaona
-featuredImage: post_01/cover.png
+featuredImage: post_01/cover.webp
 categories:
   - Robotics
 tags:
@@ -52,7 +52,7 @@ This system transforms raw 3D perception into executable robot programs through 
 - Provided low-level motion control and smooth trajectory execution
 - Supported communication with operator HMI for operation and monitoring
 
-![1](post_01/img1.png)
+![1](post_01/img1.webp)
 
 This end-to-end pipeline turns vision input into real robot movement, enabling automation where manual programming was once required.
 
@@ -65,7 +65,7 @@ The project delivered several technical innovations spanning perception, plannin
 - ✨ **Automatic Path Generation from Point Clouds**  
   Designed and implemented algorithms that convert 3D geometric data into continuous, optimized robotic motion paths.
 
-![1](post_01/img2.png)
+![1](post_01/img2.webp)
 
 - 🔗 **Industrial Controller Compatibility (MCCL)**  
   Ensured the generated paths are directly executable on MCCL-based motion control systems used in real industrial robots — no offline editing needed.
@@ -91,7 +91,7 @@ This work produced measurable improvements and demonstrated real industrial valu
 - 🤝 **Industrial Deployment Ready**  
   With MCCL compatibility and robust motion control, the solution integrates cleanly into existing automation environments.
 
-![1](post_01/img3.png)
+![1](post_01/img3.webp)
 
 ---
 

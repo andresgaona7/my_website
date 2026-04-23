@@ -2,7 +2,7 @@
 title: Robotic Grasping Using Evolutionary Deep Neural Networks
 date: 2026-01-27T16:54:19+08:00
 author: Andrés Gaona
-featuredImage: post_05/cover.png
+featuredImage: post_05/cover.webp
 categories:
   - Robotics
   - Artificial Intelligence
@@ -32,7 +32,7 @@ The challenge was to **break this trade-off** and design a system that is:
 - Accurate and **repeatable across unseen objects**
 - Directly deployable on **real robotic hardware**
 
-![1](post_05/img1.png)
+![1](post_05/img1.webp)
 
 ---
 
@@ -48,7 +48,7 @@ The system first detects whether graspable features exist, then **evolves grasp 
 
 Unlike end-to-end black-box models, this approach introduces **structured reasoning and confidence control**, allowing the robot to **reject unsafe grasps instead of failing blindly**.
 
-![1](post_05/img5.gif)
+![1](post_05/img5.mp4)
 
 ---
 
@@ -64,7 +64,7 @@ I was the **main technical driver** of this project and delivered the system end
 - ✅ Deployed and validated the system on a **6-DOF industrial robot with a two-finger gripper**
 - ✅ Benchmarked performance against **state-of-the-art grasping methods**
 
-![1](post_05/img2.png)
+![1](post_05/img2.webp)
 
 This was not a simulation-only project—the system was **executed on real hardware**, lifting and manipulating real objects.
 
@@ -77,7 +77,7 @@ This was not a simulation-only project—the system was **executed on real hardw
 - **2.0 s average grasp estimation time** with stable convergence  
 - **91.5% CNN classification accuracy** on unseen grasp features  
 
-![1](post_05/img3.png)
+![1](post_05/img3.webp)
 
 
 ### 🤖 Real Robot Success
@@ -85,7 +85,7 @@ This was not a simulation-only project—the system was **executed on real hardw
 - Reliable grasping across **30+ real objects**, including tools, household items, and personal objects
 - High **repeatability**: consistent grasp location across multiple trials
 
-![1](post_05/img4.png)
+![1](post_05/img4.webp)
 
 ### 📈 Competitive Advantage
 Compared to widely used grasping approaches:

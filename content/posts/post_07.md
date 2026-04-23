@@ -2,7 +2,7 @@
 title: Automated Satellite Antenna Tracking System
 date: 2026-01-27T17:04:23+08:00
 author: Andrés Gaona
-featuredImage: post_07/cover.png
+featuredImage: post_07/cover.webp
 categories:
   - Control system
   - Motion control

@@ -2,7 +2,7 @@
 title: Real-Time Multi-Vendor EtherCAT Motion Control (MCCL)
 date: 2026-01-27T17:24:41+08:00
 author: Andrés Gaona
-featuredImage: post_11/cover.png
+featuredImage: post_11/cover.webp
 categories:
   - Motion control library
 tags:

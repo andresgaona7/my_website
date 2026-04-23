@@ -2,7 +2,7 @@
 title: Robotic Controllers & Vision-Guided Manipulation
 date: 2026-01-27T16:49:02+08:00
 author: Andrés Gaona
-featuredImage: post_04/cover.png
+featuredImage: post_04/cover.webp
 categories:
   - Motion control
   - Robotics control
@@ -52,7 +52,7 @@ Modern industrial systems demand robots that are **precise, responsive, and adap
 - Enabled robots to **identify object types and positions** (e.g., microchips) and act autonomously from perception to actuation.
 - Merged perception data seamlessly into motion control, drastically reducing latency and increasing reactivity.
 
-![1](post_04/img1.png)
+![1](post_04/img1.webp)
 
 ---
 
@@ -85,7 +85,7 @@ This work achieved measurable improvements in both capability and performance:
 <!-- - Supported complex tasks such as **precision manipulation** and **drone testing on Stewart platforms**. -->
 - Demonstrated AI-assisted automation ready for industrial adoption.
 
-![1](post_04/img2.png)
+![1](post_04/img2.webp)
 
 ---
 

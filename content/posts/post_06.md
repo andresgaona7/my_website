@@ -2,7 +2,7 @@
 title: Deep Learning-Driven Robotic Plastic Waste Sorter
 date: 2026-01-27T17:00:12+08:00
 author: Andrés Gaona
-featuredImage: post_06/cover.png
+featuredImage: post_06/cover.webp
 categories:
   - Robotics
   - Artificial intelligence
@@ -32,7 +32,7 @@ The goal was to go beyond traditional mechanical sorters by combining real-time 
 - Tracking objects reliably and robot control using *industrial communication protocols* (e.g. MODBUS, EtherCAT)
 - Significantly reducing sorting errors compared to mechanical alternatives
 
-![1](post_06/img1.gif)
+![1](post_06/img1.mp4)
 
 ---
 
@@ -63,14 +63,14 @@ I took ownership of the vision and motion integration end-to-end:
 - Built a **hardware-accelerated vision stack** with fast GPU inference
 - Developed **object tracking & depth localization** for moving items
 
-![2](post_06/img2.png)
+![2](post_06/img2.webp)
 
 ### 🤖 Motion & Control
 - Designed a **fast-picking algorithm** tailored for *delta robot kinematics*
 - Synchronized high-speed motion with conveyor tracking
 - Implemented robust **MODBUS communication** between vision and motion modules
 
-![2](post_06/img3.png)
+![2](post_06/img3.webp)
 
 ### 🧠 System Design
 - Architected parallel vision + motion pipelines for minimal delay
@@ -91,7 +91,7 @@ This system delivered **measurable performance gains** in an industrial setting:
 | **Production Throughput** | ~70 picks/sec |
 | **Field Vision Accuracy** | ~83% in production conditions |
 
-![2](post_06/img4.gif)
+![2](post_06/img4.mp4)
 
 🎯 **Impact Highlights**
 - Cut sorting errors significantly compared to mechanical systems
