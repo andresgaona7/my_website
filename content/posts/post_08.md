@@ -38,7 +38,7 @@ The robot was designed as a modular indoor AMR capable of:
 
 From mechanical design to high-level software, the platform follows clear architectural separation between sensing, actuation, control, and coordination. This allowed rapid experimentation while maintaining system stability and clarity—key for both research and industrial contexts.
 
-![1](post_08/img1.mp4)
+<!-- ![1](post_08/img1.mp4) -->
 
 ---
 
@@ -66,7 +66,7 @@ I led and implemented the **core system components**, taking ownership of the ro
 - Adapted to the new communication and execution model
 - Achieved functional parity while improving system structure and maintainability  
 
-![1](post_08/img4.mp4)
+<!-- ![1](post_08/img4.mp4) -->
 
 ---
 
@@ -78,7 +78,7 @@ I led and implemented the **core system components**, taking ownership of the ro
 - Continuous operation over several hours without system instability  
 - Successful navigation on flat floors and indoor slopes
 
-![1](post_08/img3.mp4)
+<!-- ![1](post_08/img3.mp4) -->
 
 ### 📈 Engineering Impact
 - Delivered a **fully working AMR**, not just isolated algorithms  

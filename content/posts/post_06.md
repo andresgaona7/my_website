@@ -32,7 +32,7 @@ The goal was to go beyond traditional mechanical sorters by combining real-time 
 - Tracking objects reliably and robot control using *industrial communication protocols* (e.g. MODBUS, EtherCAT)
 - Significantly reducing sorting errors compared to mechanical alternatives
 
-![1](post_06/img1.mp4)
+<!-- ![1](post_06/img1.mp4) -->
 
 ---
 
@@ -91,7 +91,7 @@ This system delivered **measurable performance gains** in an industrial setting:
 | **Production Throughput** | ~70 picks/sec |
 | **Field Vision Accuracy** | ~83% in production conditions |
 
-![2](post_06/img4.mp4)
+<!-- ![2](post_06/img4.mp4) -->
 
 🎯 **Impact Highlights**
 - Cut sorting errors significantly compared to mechanical systems

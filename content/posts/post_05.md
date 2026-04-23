@@ -48,7 +48,7 @@ The system first detects whether graspable features exist, then **evolves grasp 
 
 Unlike end-to-end black-box models, this approach introduces **structured reasoning and confidence control**, allowing the robot to **reject unsafe grasps instead of failing blindly**.
 
-![1](post_05/img5.mp4)
+<!-- ![1](post_05/img5.mp4) -->
 
 ---
 

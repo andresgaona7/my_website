@@ -55,7 +55,7 @@ The outcome is a modular, extensible, real-time quadruped, capable of standing, 
 - Integrated model-based and whole-body control (MPC/WBC) strategies
 - Ensured smooth hand-off between high-level planner and low-level motor control
 
-![1](post_09/img1.mp4)
+<!-- ![1](post_09/img1.mp4) -->
 
 ### 🔄 System Integration & Validation
 
@@ -63,7 +63,7 @@ The outcome is a modular, extensible, real-time quadruped, capable of standing, 
 - Conducted comprehensive real-world testing & long-duration runs
 - Iteratively optimized balance and posture correction modules
 
-![1](post_09/img2.mp4)
+<!-- ![1](post_09/img2.mp4) -->
 
 ---
 
@@ -84,7 +84,7 @@ The outcome is a modular, extensible, real-time quadruped, capable of standing, 
 - End-to-end locomotion latency < 10 ms
 - Dynamic balance maintained with > 85% stability during motion
 
-![1](post_09/img4.mp4)
+<!-- ![1](post_09/img4.mp4) -->
 
 ### Long-Duration Validation
 
@@ -101,7 +101,7 @@ The outcome is a modular, extensible, real-time quadruped, capable of standing, 
   - Perception and autonomy integration
   - Adaptive, real-world robotic behavior development
 
-![1](post_09/img5.mp4)
+<!-- ![1](post_09/img5.mp4) -->
 
 ---
 

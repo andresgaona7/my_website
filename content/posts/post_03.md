@@ -39,7 +39,7 @@ At its core, Smart Tuning Technology **automates parameter tuning** for controll
 
 Users can run automated tuning sessions, visualize performance evolution, monitor sensor spectra in real time, and interact with optimization charts — all without deep manual configuration.
 
-![1](post_03/img1.mp4)
+<!-- ![1](post_03/img1.mp4) -->
 
 ---
 

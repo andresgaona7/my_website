@@ -65,13 +65,13 @@ Throughout the project, I led and delivered on the following core technical achi
 - Designed and implemented a dynamic simulation + control framework for a bio-inspired quadruped.
 - Ensured high-fidelity simulation matched real-world robot behavior.
 
-![1](post_10/img1.mp4)
+<!-- ![1](post_10/img1.mp4) -->
 
 ### 🔹 Torque-Mode Integration
 - Developed torque-based control seamlessly tied into high-level locomotion planning.
 - Achieved precise torque tracking with low latency (<10 ms and high actuation accuracy (>90%).
 
-![2](post_10/img2.mp4)
+<!-- ![2](post_10/img2.mp4) -->
 
 ### 🔹 State Machines & Smooth Motion Transitions
 - Built modular state machines for motion coordination.
@@ -81,7 +81,7 @@ Throughout the project, I led and delivered on the following core technical achi
 - Engineered and validated tree-climbing mechanisms with high grip control and safety margins.
 - Led integration of AI-based autonomous decision-making for motion selection and environmental interaction (~85% accuracy in tests).
 
-![3](post_10/img3.mp4)
+<!-- ![3](post_10/img3.mp4) -->
 
 ### 🔹 System Integration & Testing
 - Completed full-stack integration with long-duration stability validation.
@@ -97,7 +97,7 @@ The outcomes of this work demonstrate real technical impact:
 - 1+ hour of continuous robot operation with no system crashes
 - ~90% success rate in real-world tests
 
-![4](post_10/img4.mp4)
+<!-- ![4](post_10/img4.mp4) -->
 
 ### ✔️ Control Quality
 - Smooth motion control with effective torque tracking
@@ -107,7 +107,7 @@ The outcomes of this work demonstrate real technical impact:
 - Stable torque-controlled locomotion
 - Bio-inspired climbing and balance strategies validated experimentally
 
-![5](post_10/img5.mp4)
+<!-- ![5](post_10/img5.mp4) -->
 
 ### ✔️ Scalable Architecture for Future Work
 - Modular and extensible control framework designed for next-generation autonomous legged robots
