@@ -50,30 +50,9 @@ We focused on:
 
 This wasn’t just about making a robot walk — it was about making it walk well, adaptively, and continuously in real environments.
 
-<!-- ![0](post_10/img0.mp4) -->
-<!-- <video controls width="100%">
-  <source src="post_10/img0.mp4" type="video/mp4">
-</video> -->
-<!-- 
-<video controls width="100%">
-  <source src="{{ "img0.mp4" | relURL }}" type="video/mp4">
-</video> -->
-
-<video controls width="50%">
-  <source src="img0.mp4" type="video/mp4">
-</video>
-
-
 <video controls style="display:block; margin:0 auto; width:50%;">
   <source src="img0.mp4" type="video/mp4">
 </video>
-
-<!-- <video controls width="100%">
-  <source src="post_10/img0.mp4" type="video/mp4">
-</video>
-
-
-<p style="color:red;">TEST VIDEO HERE</p> -->
 
 ---
 
@@ -86,12 +65,18 @@ Throughout the project, I led and delivered on the following core technical achi
 - Ensured high-fidelity simulation matched real-world robot behavior.
 
 <!-- ![1](post_10/img1.mp4) -->
+<video controls style="display:block; margin:0 auto; width:50%;">
+  <source src="img1.mp4" type="video/mp4">
+</video>
 
 ### 🔹 Torque-Mode Integration
 - Developed torque-based control seamlessly tied into high-level locomotion planning.
 - Achieved precise torque tracking with low latency (<10 ms and high actuation accuracy (>90%).
 
 <!-- ![2](post_10/img2.mp4) -->
+<video controls style="display:block; margin:0 auto; width:50%;">
+  <source src="img2.mp4" type="video/mp4">
+</video>
 
 ### 🔹 State Machines & Smooth Motion Transitions
 - Built modular state machines for motion coordination.
@@ -102,6 +87,9 @@ Throughout the project, I led and delivered on the following core technical achi
 - Led integration of AI-based autonomous decision-making for motion selection and environmental interaction (~85% accuracy in tests).
 
 <!-- ![3](post_10/img3.mp4) -->
+<video controls style="display:block; margin:0 auto; width:50%;">
+  <source src="img3.mp4" type="video/mp4">
+</video>
 
 ### 🔹 System Integration & Testing
 - Completed full-stack integration with long-duration stability validation.
@@ -118,6 +106,9 @@ The outcomes of this work demonstrate real technical impact:
 - ~90% success rate in real-world tests
 
 <!-- ![4](post_10/img4.mp4) -->
+<video controls style="display:block; margin:0 auto; width:50%;">
+  <source src="img4.mp4" type="video/mp4">
+</video>
 
 ### ✔️ Control Quality
 - Smooth motion control with effective torque tracking
@@ -128,6 +119,9 @@ The outcomes of this work demonstrate real technical impact:
 - Bio-inspired climbing and balance strategies validated experimentally
 
 <!-- ![5](post_10/img5.mp4) -->
+<video controls style="display:block; margin:0 auto; width:50%;">
+  <source src="img1.mp5" type="video/mp4">
+</video>
 
 ### ✔️ Scalable Architecture for Future Work
 - Modular and extensible control framework designed for next-generation autonomous legged robots
