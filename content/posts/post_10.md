@@ -52,7 +52,7 @@ This wasn’t just about making a robot walk — it was about making it walk wel
 
 <!-- ![0](post_10/img0.mp4) -->
 <video controls width="100%">
-  <source src="post_01/img0.mp4" type="video/mp4">
+  <source src="post_10/img0.mp4" type="video/mp4">
 </video>
 
 ---
