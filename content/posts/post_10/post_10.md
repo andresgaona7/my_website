@@ -54,9 +54,13 @@ This wasn’t just about making a robot walk — it was about making it walk wel
 <!-- <video controls width="100%">
   <source src="post_10/img0.mp4" type="video/mp4">
 </video> -->
+<!-- 
+<video controls width="100%">
+  <source src="{{ "img0.mp4" | relURL }}" type="video/mp4">
+</video> -->
 
 <video controls width="100%">
-  <source src="{{ "post_10/img0.mp4" | relURL }}" type="video/mp4">
+  <source src="img0.mp4" type="video/mp4">
 </video>
 
 ---
