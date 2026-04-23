@@ -8,7 +8,7 @@ title = 'About me'
 
  
 <!-- ![1](images/aboutme.webp)   -->
-<img src="images/aboutme.webp" style="width:50%; display:block; margin:0 auto;">
+<img src="aboutme.webp" style="width:25%; display:block; margin:0 auto;">
 
 **I am a Mechatronics engineer specializing in real-time control systems, with hands-on experience building advanced platforms. Focused on bridging low-level hardware control and high-level autonomy to create intelligent, responsive robotic systems.**
 
