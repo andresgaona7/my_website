@@ -1,4 +1,5 @@
 project_sources/
+public/
 __pycache__
 
 .DS_Store
