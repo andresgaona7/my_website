@@ -1,5 +1,6 @@
 project_sources/
 public/
+scripts/process_images/venv/
 __pycache__
 
 .DS_Store
