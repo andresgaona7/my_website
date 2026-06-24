@@ -1,0 +1,66 @@
+{{- define "content" -}}
+    {{- $params := .Scratch.Get "params" -}}
+    {{- $profile := .Site.Params.home.profile -}}
+    {{- $posts := .Site.Params.home.posts -}}
+
+    <div class="page home custom-home"{{ if ne $posts.enable false }} data-home="posts"{{ end }}>
+        <section class="home-banner" aria-label="Profile introduction">
+            <div class="home-banner-media">
+                <div class="home-banner-avatar">
+                    {{- dict "Src" "images/avatar.webp" "Alt" "Andrés Gaona" "Class" "home-banner-image" | partial "plugin/img.html" -}}
+                </div>
+            </div>
+            <div class="home-banner-content">
+                <h1 class="home-banner-title">Andrés Gaona</h1>
+                {{- with $profile.subtitle -}}
+                    <div class="home-banner-subtitle">
+                        {{- if $profile.typeit -}}
+                            {{- $id := dict "Content" . "Scratch" $.Scratch | partial "function/id.html" -}}
+                            <div id="{{ $id }}" class="typeit"></div>
+                            {{- dict $id (slice $id) | dict "typeitMap" | merge ($.Scratch.Get "this") | $.Scratch.Set "this" -}}
+                        {{- else -}}
+                            {{- . | safeHTML -}}
+                        {{- end -}}
+                    </div>
+                {{- end -}}
+                {{- with .Site.Params.social.GitHub -}}
+                    <div class="home-banner-links">
+                        <a class="home-banner-link" href="https://github.com/{{ . }}" rel="noopener noreferrer me" target="_blank">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                {{- end -}}
+            </div>
+        </section>
+
+        {{- /* Content */ -}}
+        {{- if .Content -}}
+            <div class="single">
+                <div class="content" id="content">
+                    {{- dict "Content" .Content "Ruby" $params.ruby "Fraction" $params.fraction "Fontawesome" $params.fontawesome | partial "function/content.html" | safeHTML -}}
+                </div>
+            </div>
+        {{- end -}}
+
+        {{- /* Posts */ -}}
+        {{- if ne $posts.enable false | and .Site.RegularPages -}}
+            {{- /* Paginate */ -}}
+            {{- $pages := where .Site.RegularPages "Type" "posts" -}}
+            {{- if .Site.Params.page.hiddenFromHomePage -}}
+                {{- $pages = where $pages "Params.hiddenfromhomepage" false -}}
+            {{- else -}}
+                {{- $pages = where $pages "Params.hiddenfromhomepage" "!=" true -}}
+            {{- end -}}
+            {{- with $posts.paginate | default .Site.Params.paginate -}}
+                {{- $pages = $.Paginate $pages . -}}
+            {{- else -}}
+                {{- $pages = .Paginate $pages -}}
+            {{- end -}}
+            {{- range $pages.Pages -}}
+                {{- .Render "summary" -}}
+            {{- end -}}
+            {{- partial "paginator.html" . -}}
+        {{- end -}}
+    </div>
+{{- end -}}

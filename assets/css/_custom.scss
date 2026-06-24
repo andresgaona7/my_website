@@ -1,0 +1,125 @@
+// ==============================
+// Custom style
+// ==============================
+
+.custom-home {
+  .home-banner {
+    display: grid;
+    grid-template-columns: minmax(9rem, 13rem) minmax(0, 32rem);
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    min-height: 17rem;
+    padding: 3rem 0 2.5rem;
+  }
+
+  .home-banner-media {
+    display: flex;
+    justify-content: center;
+  }
+
+  .home-banner-avatar {
+    width: 12.5rem;
+    max-width: 100%;
+    aspect-ratio: 2 / 3;
+    padding: .45rem;
+    background: $global-background-color;
+    border: 1px solid $global-border-color;
+    border-radius: .45rem;
+    box-shadow: 0 .45rem 1.25rem rgba(0, 0, 0, .06);
+
+    [theme=dark] & {
+      background: $global-background-color-dark;
+      border-color: $global-border-color-dark;
+      box-shadow: 0 .45rem 1.25rem rgba(0, 0, 0, .28);
+    }
+  }
+
+  .home-banner-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: .3rem;
+  }
+
+  .home-banner-content {
+    min-width: 0;
+  }
+
+  .home-banner-title {
+    margin: 0 0 1rem;
+    font-size: clamp(2.25rem, 6vw, 4.75rem);
+    line-height: 1;
+    font-weight: 800;
+    color: $global-font-color;
+
+    [theme=dark] & {
+      color: $global-font-color-dark;
+    }
+  }
+
+  .home-banner-subtitle {
+    max-width: 42rem;
+    min-height: 4.2rem;
+    font-size: 1.35rem;
+    line-height: 1.55;
+    color: $global-font-secondary-color;
+
+    [theme=dark] & {
+      color: $global-font-secondary-color-dark;
+    }
+  }
+
+  .home-banner-links {
+    margin-top: 1.25rem;
+  }
+
+  .home-banner-link {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: $global-link-color;
+
+    [theme=dark] & {
+      color: $global-link-color-dark;
+    }
+
+    &:hover {
+      color: $global-link-hover-color;
+
+      [theme=dark] & {
+        color: $global-link-hover-color-dark;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .custom-home {
+    .home-banner {
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+      min-height: auto;
+      padding: 2.25rem 0 2rem;
+      text-align: center;
+    }
+
+    .home-banner-avatar {
+      width: 11rem;
+      max-width: 62vw;
+    }
+
+    .home-banner-subtitle {
+      margin: 0 auto;
+      min-height: 3.5rem;
+      font-size: 1.1rem;
+    }
+
+    .home-banner-links {
+      margin-top: 1rem;
+    }
+  }
+}
