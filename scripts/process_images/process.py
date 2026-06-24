@@ -2,6 +2,10 @@ import os
 import imageio
 import numpy as np
 from PIL import Image
+from pathlib import Path
+
+
+SCRIPT_DIR = Path(__file__).resolve().parent
 
 
 def convert_image(input_path, output_path, width=1400, quality=80):
@@ -69,4 +73,4 @@ def process_folder(folder):
             gif_to_mp4(path, path.replace(".gif", ".mp4"))
 
 
-process_folder("older/")
+process_folder(SCRIPT_DIR / "older")

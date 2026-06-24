@@ -2,6 +2,9 @@ import os
 import shutil
 from pathlib import Path
 
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+
 def copy_everything(input_path, output_path):
     for filename in os.listdir(input_path):
         in_path = os.path.join(input_path, filename)
@@ -17,4 +20,4 @@ def copy_everything(input_path, output_path):
             dst.parent.mkdir(parents=True, exist_ok=True)
             shutil.move(src, dst)
         
-copy_everything("older/", "new/")
+copy_everything(SCRIPT_DIR / "older", SCRIPT_DIR / "new")
