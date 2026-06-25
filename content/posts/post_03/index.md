@@ -1,6 +1,7 @@
 ---
 title: Smart Tuning Technology
 date: 2026-01-27T16:43:08+08:00
+weight: 80
 author: Andrés Gaona
 featuredImage: post_03/cover.webp
 categories:

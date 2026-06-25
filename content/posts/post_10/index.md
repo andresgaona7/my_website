@@ -1,6 +1,7 @@
 ---
-title: Bio-Inspired Robots (Bionic Panda)
+title: Bio-Inspired Bionic Panda Robot
 date: 2026-01-27T17:21:21+08:00
+weight: 30
 author: Andrés Gaona
 featuredImage: post_10/cover.webp
 categories:
@@ -17,19 +18,19 @@ tags:
 draft: false
 ---
 
-High-fidelity simulation and real-time control of a bio-inspired panda robot with torque control, MPC/WBC locomotion, and autonomous behaviors.
+Bio-inspired quadruped behavior development for a bionic panda robot, focused on adaptive movement, climbing, balance recovery, autonomy, and simulation-to-real validation.
 
 <!--more-->
 
 ## Overview & Challenges
 
-Bio-Inspired Robots are an ambitious R&D initiative aimed at pushing the boundaries of quadrupedal robotics — combining high-fidelity simulation, real-time torque control, and advanced autonomous behaviors to build a truly capable bio-inspired panda robot.
+The Bionic Panda project focused on **bio-inspired behavior and autonomy** for a quadruped robot with a panda-like morphology. Unlike the general four-legged platform work, this project emphasized how the robot should adapt, recover balance, climb, and choose behaviors in realistic scenarios using simulation-informed control and autonomous decision logic.
 
 The core challenges were:
 
 - Simulating and controlling a complex quadruped with realistic dynamics
-- Synchronizing high-level planning with low-level real-time control
-- Implementing robust torque-based control under disturbances
+- Translating bio-inspired movement goals into executable robot behaviors
+- Handling disturbances during adaptive movements and transitions
 - Enabling advanced behaviors like balance recovery, climbing, and autonomy
 - Ensuring long-duration stability in real-world tests
 

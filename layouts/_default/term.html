@@ -1,0 +1,28 @@
+{{- define "title" }}
+    {{- with .Title -}}{{ . }}{{- else -}}{{ .Data.Term | default .Section }}{{- end }} - {{ .Site.Title -}}
+{{- end -}}
+
+{{- define "content" -}}
+    <div class="page archive">
+        <h2 class="single-title animate__animated animate__pulse animate__faster">
+            {{- with .Title -}}{{ . }}{{- else -}}{{ .Data.Term | default .Section }}{{- end -}}
+        </h2>
+
+        {{- if .Pages -}}
+            {{- $pages := .Pages -}}
+            {{- with .Site.Params.section.paginate | default .Site.Params.paginate -}}
+                {{- $pages = $.Paginate $pages . -}}
+            {{- else -}}
+                {{- $pages = .Paginate $pages -}}
+            {{- end -}}
+            {{- range $pages.Pages -}}
+                <article class="archive-item">
+                    <a href="{{ .RelPermalink }}" class="archive-item-link">
+                        {{- .Title | emojify -}}
+                    </a>
+                </article>
+            {{- end -}}
+            {{- partial "paginator.html" . -}}
+        {{- end -}}
+    </div>
+{{- end -}}

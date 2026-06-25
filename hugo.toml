@@ -34,6 +34,12 @@ identifier = "posts"
 name = "Projects"
 url = "/posts/"
 
+[[menu.main]]
+weight = 4
+identifier = "cv"
+name = "CV"
+url = "/andres-gaona-cv.pdf"
+
 
 [params]
 defaultTheme = "light"
@@ -60,7 +66,7 @@ typeit = false
 
 
 [params.footer]
-enable = true
+enable = false
 custom = ""
 hugo = false
 copyright = true
@@ -95,3 +101,4 @@ js = ["js/two-state-theme.js"]
 
 [params.social]
 GitHub = "andresgaona7"
+LinkedIn = "andresgaona7"

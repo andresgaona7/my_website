@@ -1,6 +1,7 @@
 ---
 title: Robotic Grasping Using Evolutionary Deep Neural Networks
 date: 2026-01-27T16:54:19+08:00
+weight: 60
 author: Andrés Gaona
 featuredImage: post_05/cover.webp
 categories:
@@ -105,4 +106,3 @@ This project demonstrates how **AI can be engineered—not just trained**:
 ---
 
 ## 📎 Links
-

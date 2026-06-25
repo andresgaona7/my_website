@@ -72,6 +72,9 @@
   }
 
   .home-banner-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     margin-top: 1.25rem;
   }
 
@@ -212,12 +215,104 @@
     font-weight: 600;
   }
 
-  .home-project-archive-link {
-    margin: 1.5rem 0 0;
-    text-align: center;
+  .home-contact-cta {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    gap: 1rem;
+    margin: 2.5rem 0 0;
+    padding: 1.5rem;
+    border: 1px solid $global-border-color;
+    border-radius: .5rem;
+    background: $global-background-color;
 
-    a {
-      font-weight: 600;
+    [theme=dark] & {
+      border-color: $global-border-color-dark;
+      background: $global-background-color-dark;
+    }
+  }
+
+  .home-contact-copy {
+    min-width: 0;
+    max-width: 48rem;
+
+    h2 {
+      margin: 0 0 .35rem;
+      font-size: 1.45rem;
+      line-height: 1.25;
+      color: $global-font-color;
+
+      [theme=dark] & {
+        color: $global-font-color-dark;
+      }
+    }
+
+    p {
+      margin: 0;
+      color: $global-font-secondary-color;
+
+      [theme=dark] & {
+        color: $global-font-secondary-color-dark;
+      }
+    }
+  }
+
+  .home-contact-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: .65rem;
+  }
+
+  .home-contact-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.35rem;
+    padding: 0 .95rem;
+    border: 1px solid $global-border-color;
+    border-radius: .35rem;
+    font-weight: 600;
+    color: $global-font-color;
+    background: transparent;
+
+    [theme=dark] & {
+      border-color: $global-border-color-dark;
+      color: $global-font-color-dark;
+    }
+
+    &:hover {
+      color: $global-link-hover-color;
+      border-color: $global-link-hover-color;
+
+      [theme=dark] & {
+        color: $global-link-hover-color-dark;
+        border-color: $global-link-hover-color-dark;
+      }
+    }
+  }
+
+  .home-contact-button-primary {
+    color: $global-background-color;
+    border-color: $global-link-color;
+    background: $global-link-color;
+
+    [theme=dark] & {
+      color: $global-background-color-dark;
+      border-color: $global-link-color-dark;
+      background: $global-link-color-dark;
+    }
+
+    &:hover {
+      color: $global-background-color;
+      border-color: $global-link-hover-color;
+      background: $global-link-hover-color;
+
+      [theme=dark] & {
+        color: $global-background-color-dark;
+        border-color: $global-link-hover-color-dark;
+        background: $global-link-hover-color-dark;
+      }
     }
   }
 }
@@ -258,6 +353,15 @@
       h2 {
         font-size: 1.45rem;
       }
+    }
+
+    .home-contact-cta {
+      grid-template-columns: 1fr;
+      padding: 1.15rem;
+    }
+
+    .home-contact-actions {
+      justify-content: flex-start;
     }
   }
 }

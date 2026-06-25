@@ -24,7 +24,7 @@ Rework the AG website so recruiters see the strongest robotics evidence first. T
 |---:|---|---|
 | 1 | Hero: Andres Gaona | State the target profile clearly: robotics R&D engineer building real-time robotic systems across EtherCAT motion control, legged robots, AMRs, and AI vision. |
 | 2 | Real-Time Multi-Vendor EtherCAT Motion Control (MCCL) | Show production-grade C++/EtherCAT infrastructure, multi-vendor support, deterministic control, and customer impact. |
-| 3 | Real-Time Four-Legged Robot Platform | Show low-level quadruped platform engineering: torque control, motor communication, PREEMPT-RT, MPC/WBC, latency, and long-duration validation. |
+| 3 | Quadruped Locomotion & Control Platform | Show low-level quadruped platform engineering: torque control, motor communication, PREEMPT-RT, MPC/WBC, latency, and long-duration validation. |
 | 4 | Bio-Inspired Bionic Panda Robot | Show advanced behavior work: bio-inspired locomotion, climbing, balance recovery, AI decision-making, simulation-to-real validation. |
 | 5 | Autonomous Mobile Robot for Indoor / Hospital Logistics | Show current leadership, ROS2, EtherCAT, navigation, semantic mapping, and end-to-end system integration. |
 | 6 | Deep Learning Robotic Plastic Waste Sorter | Show deployed AI robotics in industrial conditions: YOLOv4, GPU inference, conveyor tracking, delta robot picking, throughput, and accuracy. |
@@ -103,7 +103,7 @@ Suggested card positioning:
 
 | Project | Card title | Recruiter-facing summary |
 |---|---|---|
-| Four-Legged Robot Platform | Real-Time Four-Legged Robot Platform | Torque-controlled quadruped platform with EtherCAT/RS485/LCM motor communication, PREEMPT-RT tuning, MPC/WBC locomotion, sub-ms latency, and 6+ hour validation. |
+| Four-Legged Robot Platform | Quadruped Locomotion & Control Platform | Torque-controlled quadruped platform with EtherCAT/RS485/LCM motor communication, PREEMPT-RT tuning, MPC/WBC locomotion, sub-ms latency, and 6+ hour validation. |
 | Bio-Inspired Robots (Bionic Panda) | Bio-Inspired Bionic Panda Robot | Bio-inspired quadruped focused on adaptive behaviors, climbing, balance recovery, autonomous decision-making, simulation-to-real control, and long-duration behavior validation. |
 
 Acceptance checks:

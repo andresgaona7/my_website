@@ -1,6 +1,7 @@
 ---
 title: Deep Learning-Driven Robotic Plastic Waste Sorter
 date: 2026-01-27T17:00:12+08:00
+weight: 50
 author: Andrés Gaona
 featuredImage: post_06/cover.webp
 categories:
@@ -108,4 +109,3 @@ This system delivered **measurable performance gains** in an industrial setting:
 ---
 
 ## 📎 Links
-

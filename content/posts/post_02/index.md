@@ -1,6 +1,7 @@
 ---
 title: Intelligent AR/VR Robot Arm Teaching Technology
 date: 2026-01-27T14:50:15+08:00
+weight: 100
 author: Andrés Gaona
 featuredImage: post_02/cover.webp
 categories:

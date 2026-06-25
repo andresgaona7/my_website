@@ -1,6 +1,7 @@
 ---
-title: Four-Legged Robot Platform
+title: Quadruped Locomotion & Control Platform
 date: 2026-01-27T17:18:00+08:00
+weight: 20
 author: Andrés Gaona
 featuredImage: post_09/cover.webp
 categories:
@@ -13,15 +14,15 @@ tags:
 draft: false
 ---
 
-Design and development of a real-time, torque-controlled quadruped robot using EtherCAT, model-based control, and MPC.
+Core quadruped platform engineering for deterministic motor communication, real-time Linux control, gait execution, and long-duration locomotion validation.
 
 <!--more-->
 
 ## 🚀 Overview & Challenges
 
-Designing a quadruped robot that **walks with stability, precision, and robustness in real-time** is a multifaceted systems challenge. It demands coordination across hardware, low-latency communication, control theory, and middleware infrastructure — all without compromising safety or performance.
+This project focused on the **robotics platform underneath legged locomotion**: deterministic actuator communication, real-time Linux tuning, gait execution, safety behavior, and long-duration validation. The engineering problem was not only making a quadruped walk, but building a reusable control foundation that could support stable experiments across hardware, middleware, and locomotion modules.
 
-The primary challenge was to build a full-stack robotics solution capable of real-time torque control and dynamic locomotion, supporting multiple gait modes with responsive posture correction and stable long-duration operation.
+The primary challenge was to keep the full control stack predictable under real robot constraints: motor buses, timing jitter, safety checks, gait transitions, and continuous operation all had to work together without compromising stability.
 
 ---
 
@@ -118,4 +119,3 @@ The outcome is a modular, extensible, real-time quadruped, capable of standing, 
 ---
 
 ## 📎 Links
-

@@ -1,6 +1,7 @@
 ---
 title: Automated Satellite Antenna Tracking System
 date: 2026-01-27T17:04:23+08:00
+weight: 110
 author: Andrés Gaona
 featuredImage: post_07/cover.webp
 categories:
@@ -76,5 +77,4 @@ These results translate to **consistent satellite links**, reduced operational d
 ---
 
 ## 📎 Links
-
 

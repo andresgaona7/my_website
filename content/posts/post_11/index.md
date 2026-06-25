@@ -1,6 +1,7 @@
 ---
 title: Real-Time Multi-Vendor EtherCAT Motion Control (MCCL)
 date: 2026-01-27T17:24:41+08:00
+weight: 10
 author: Andrés Gaona
 featuredImage: post_11/cover.webp
 categories:
@@ -96,4 +97,3 @@ This collaboration increased adoption and drove a 100% growth in customer reques
 | 🚀 Onboarding automation | Faster setup & fewer errors from ESI → ENI generation |
 | 📊 Increased compatibility | ~20% broader support for standard motion profiles |
 | 🤝 Customer growth | 100% boost in customer requests through improved integration |
-

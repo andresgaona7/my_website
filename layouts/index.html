@@ -24,14 +24,24 @@
                         {{- end -}}
                     </div>
                 {{- end -}}
-                {{- with .Site.Params.social.GitHub -}}
-                    <div class="home-banner-links">
+                <div class="home-banner-links">
+                    {{- with .Site.Params.social.GitHub -}}
                         <a class="home-banner-link" href="https://github.com/{{ . }}" rel="noopener noreferrer me" target="_blank">
                             <i class="fab fa-github" aria-hidden="true"></i>
                             <span>GitHub</span>
                         </a>
-                    </div>
-                {{- end -}}
+                    {{- end -}}
+                    {{- with .Site.Params.social.LinkedIn -}}
+                        <a class="home-banner-link" href="https://www.linkedin.com/in/{{ . }}" rel="noopener noreferrer me" target="_blank">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    {{- end -}}
+                    <a class="home-banner-link" href="/andres-gaona-cv.pdf">
+                        <i class="fas fa-file-arrow-down" aria-hidden="true"></i>
+                        <span>CV</span>
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -95,6 +105,24 @@
             </section>
         {{- end -}}
 
+        <section class="home-contact-cta" aria-labelledby="home-contact-title">
+            <div class="home-contact-copy">
+                <h2 id="home-contact-title">Let's talk robotics</h2>
+                <p>Interested in robotics R&amp;D, control systems, EtherCAT motion, AMRs, or AI-enabled manipulation? Reach me directly or review the full project archive.</p>
+            </div>
+            <div class="home-contact-actions">
+                <a class="home-contact-button home-contact-button-primary" href="mailto:adgaona7@gmail.com">Email me</a>
+                <a class="home-contact-button" href="/andres-gaona-cv.pdf">Download CV</a>
+                {{- with .Site.Params.social.LinkedIn -}}
+                    <a class="home-contact-button" href="https://www.linkedin.com/in/{{ . }}" rel="noopener noreferrer me" target="_blank">LinkedIn</a>
+                {{- end -}}
+                {{- with .Site.Params.social.GitHub -}}
+                    <a class="home-contact-button" href="https://github.com/{{ . }}" rel="noopener noreferrer me" target="_blank">GitHub</a>
+                {{- end -}}
+                <a class="home-contact-button" href="/posts/">All projects</a>
+            </div>
+        </section>
+
         {{- /* Content */ -}}
         {{- if .Content -}}
             <div class="single">
@@ -104,8 +132,5 @@
             </div>
         {{- end -}}
 
-        <div class="home-project-archive-link">
-            <a href="/posts/">Browse all projects</a>
-        </div>
     </div>
 {{- end -}}

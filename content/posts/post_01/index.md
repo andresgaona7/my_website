@@ -1,6 +1,7 @@
 ---
 title: Robotic Arm Automatic Path Generation Technology
 date: 2026-01-26T19:25:15+08:00
+weight: 90
 author: Andrés Gaona
 featuredImage: post_01/cover.webp
 categories:

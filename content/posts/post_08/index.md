@@ -1,6 +1,7 @@
 ---
 title: Autonomous Mobile Robot (AMR) for Indoor Environments
 date: 2026-01-27T17:08:08+08:00
+weight: 40
 author: Andrés Gaona
 featuredImage: post_08/cover.webp
 categories:
@@ -97,7 +98,6 @@ I led and implemented the **core system components**, taking ownership of the ro
 ---
 
 ## 📎 Links
-
 
 
 

@@ -1,28 +1,28 @@
 [[featured]]
 page = "posts/post_11"
-summary = "Real-time C++ EtherCAT motion control platform unifying 84+ devices, broadening motion-profile support by ~20%, and driving 100% growth in customer requests."
+summary = "C++ EtherCAT motion-control platform unifying 84+ devices, expanding motion-profile compatibility by ~20%, and improving customer adoption through faster device onboarding."
 
 [[featured]]
 page = "posts/post_09"
-title = "Real-Time Four-Legged Robot Platform"
-summary = "Torque-controlled quadruped platform with EtherCAT/RS485/LCM motor communication, PREEMPT-RT tuning, MPC/WBC locomotion, sub-ms latency, and 6+ hour validation."
+title = "Quadruped Locomotion & Control Platform"
+summary = "Torque-controlled quadruped locomotion platform with EtherCAT/RS485/LCM motor interfaces, sub-ms system latency, <10 ms communication, and 6+ hour validation."
 
 [[featured]]
 page = "posts/post_10"
 title = "Bio-Inspired Bionic Panda Robot"
-summary = "Bio-inspired quadruped focused on adaptive behaviors, climbing, balance recovery, autonomous decision-making, simulation-to-real control, and long-duration behavior validation."
+summary = "Bio-inspired quadruped behavior system for adaptive movement, climbing, balance recovery, and autonomous behavior selection, validated through 1+ hour continuous operation and simulation-informed control."
 
 [[featured]]
 page = "posts/post_08"
-summary = "ROS/ROS2 autonomous mobile robot work spanning navigation, odometry, EtherCAT actuator coordination, semantic mapping, and end-to-end system integration."
+summary = "ROS/ROS2 AMR platform with system integration across ROS2 navigation, EtherCAT actuation, odometry, and semantic mapping."
 
 [[featured]]
 page = "posts/post_06"
-summary = "Industrial AI vision system using YOLOv4, GPU inference, conveyor tracking, and delta robot picking for real recycling plant conditions."
+summary = "Industrial AI sorting system using YOLOv4, GPU inference, conveyor tracking, and delta robot picking, reaching up to 97% accuracy, ~21 FPS, and ~60 cycles/min."
 
 [[featured]]
 page = "posts/post_05"
-summary = "AI grasping system validated on physical robot experiments with 1.5M+ augmented samples, 91.5% classification accuracy, and 94% grasp success."
+summary = "AI grasping system validated on physical robot experiments with 1.5M+ augmented samples, 91.5% CNN accuracy, 94% grasp success, and ~10x faster inference."
 
 [[more]]
 page = "posts/post_04"

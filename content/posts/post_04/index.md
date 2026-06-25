@@ -1,6 +1,7 @@
 ---
 title: Robotic Controllers & Vision-Guided Manipulation
 date: 2026-01-27T16:49:02+08:00
+weight: 70
 author: Andrés Gaona
 featuredImage: post_04/cover.webp
 categories:
