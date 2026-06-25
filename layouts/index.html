@@ -6,11 +6,6 @@
 
     <div class="page home custom-home"{{ if ne $posts.enable false }} data-home="posts"{{ end }}>
         <section class="home-banner" aria-label="Profile introduction">
-            <div class="home-banner-media">
-                <div class="home-banner-avatar">
-                    {{- dict "Src" "images/avatar.webp" "Alt" "Andrés Gaona" "Class" "home-banner-image" | partial "plugin/img.html" -}}
-                </div>
-            </div>
             <div class="home-banner-content">
                 <h1 class="home-banner-title">Andrés Gaona</h1>
                 {{- with $profile.subtitle -}}
@@ -41,6 +36,11 @@
                         <i class="fas fa-file-arrow-down" aria-hidden="true"></i>
                         <span>CV</span>
                     </a>
+                </div>
+            </div>
+            <div class="home-banner-media">
+                <div class="home-banner-avatar">
+                    {{- dict "Src" "images/avatar.webp" "Alt" "Andrés Gaona" "Class" "home-banner-image" | partial "plugin/img.html" -}}
                 </div>
             </div>
         </section>
@@ -111,15 +111,30 @@
                 <p>Interested in robotics R&amp;D, control systems, EtherCAT motion, AMRs, or AI-enabled manipulation? Reach me directly or review the full project archive.</p>
             </div>
             <div class="home-contact-actions">
-                <a class="home-contact-button home-contact-button-primary" href="mailto:adgaona7@gmail.com">Email me</a>
-                <a class="home-contact-button" href="/andres-gaona-cv.pdf">Download CV</a>
+                <a class="home-contact-button home-contact-button-primary" href="mailto:adgaona7@gmail.com">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <span>Email me</span>
+                </a>
+                <a class="home-contact-button" href="/andres-gaona-cv.pdf">
+                    <i class="fas fa-file-arrow-down" aria-hidden="true"></i>
+                    <span>Download CV</span>
+                </a>
                 {{- with .Site.Params.social.LinkedIn -}}
-                    <a class="home-contact-button" href="https://www.linkedin.com/in/{{ . }}" rel="noopener noreferrer me" target="_blank">LinkedIn</a>
+                    <a class="home-contact-button" href="https://www.linkedin.com/in/{{ . }}" rel="noopener noreferrer me" target="_blank">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        <span>LinkedIn</span>
+                    </a>
                 {{- end -}}
                 {{- with .Site.Params.social.GitHub -}}
-                    <a class="home-contact-button" href="https://github.com/{{ . }}" rel="noopener noreferrer me" target="_blank">GitHub</a>
+                    <a class="home-contact-button" href="https://github.com/{{ . }}" rel="noopener noreferrer me" target="_blank">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                        <span>GitHub</span>
+                    </a>
                 {{- end -}}
-                <a class="home-contact-button" href="/posts/">All projects</a>
+                <a class="home-contact-button" href="/posts/">
+                    <i class="fas fa-diagram-project" aria-hidden="true"></i>
+                    <span>All projects</span>
+                </a>
             </div>
         </section>
 
