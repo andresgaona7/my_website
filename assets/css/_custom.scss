@@ -95,6 +95,131 @@
       }
     }
   }
+
+  .home-projects {
+    margin: 1.5rem 0 3rem;
+  }
+
+  .home-section-header {
+    margin: 0 auto 1.25rem;
+    max-width: 46rem;
+    text-align: center;
+
+    h2 {
+      margin: 0 0 .45rem;
+      font-size: 1.85rem;
+      line-height: 1.25;
+      color: $global-font-color;
+
+      [theme=dark] & {
+        color: $global-font-color-dark;
+      }
+    }
+
+    p {
+      margin: 0;
+      color: $global-font-secondary-color;
+
+      [theme=dark] & {
+        color: $global-font-secondary-color-dark;
+      }
+    }
+  }
+
+  .home-project-grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .home-project-grid-featured {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .home-project-grid-more {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .home-project-card {
+    overflow: hidden;
+    border: 1px solid $global-border-color;
+    border-radius: .5rem;
+    background: $global-background-color;
+    box-shadow: 0 .35rem 1rem rgba(0, 0, 0, .05);
+
+    [theme=dark] & {
+      border-color: $global-border-color-dark;
+      background: $global-background-color-dark;
+      box-shadow: 0 .35rem 1rem rgba(0, 0, 0, .22);
+    }
+  }
+
+  .home-project-image {
+    display: block;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: $global-background-color;
+
+    [theme=dark] & {
+      background: $global-background-color-dark;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .home-project-body {
+    padding: 1rem;
+
+    h3 {
+      margin: 0 0 .5rem;
+      font-size: 1.15rem;
+      line-height: 1.3;
+    }
+
+    p {
+      margin: 0;
+      font-size: .95rem;
+      line-height: 1.55;
+      color: $global-font-secondary-color;
+
+      [theme=dark] & {
+        color: $global-font-secondary-color-dark;
+      }
+    }
+  }
+
+  .home-project-card-compact {
+    .home-project-body {
+      padding: .9rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: .9rem;
+    }
+  }
+
+  .home-project-link {
+    display: inline-block;
+    margin-top: .85rem;
+    font-weight: 600;
+  }
+
+  .home-project-archive-link {
+    margin: 1.5rem 0 0;
+    text-align: center;
+
+    a {
+      font-weight: 600;
+    }
+  }
 }
 
 @media only screen and (max-width: 680px) {
@@ -120,6 +245,19 @@
 
     .home-banner-links {
       margin-top: 1rem;
+    }
+
+    .home-project-grid-featured,
+    .home-project-grid-more {
+      grid-template-columns: 1fr;
+    }
+
+    .home-section-header {
+      text-align: left;
+
+      h2 {
+        font-size: 1.45rem;
+      }
     }
   }
 }

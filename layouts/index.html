@@ -2,6 +2,7 @@
     {{- $params := .Scratch.Get "params" -}}
     {{- $profile := .Site.Params.home.profile -}}
     {{- $posts := .Site.Params.home.posts -}}
+    {{- $homeProjects := .Site.Data.home_projects -}}
 
     <div class="page home custom-home"{{ if ne $posts.enable false }} data-home="posts"{{ end }}>
         <section class="home-banner" aria-label="Profile introduction">
@@ -34,6 +35,66 @@
             </div>
         </section>
 
+        {{- with $homeProjects.featured -}}
+            <section class="home-projects home-projects-featured" aria-labelledby="featured-projects-title">
+                <div class="home-section-header">
+                    <h2 id="featured-projects-title">Featured Robotics Projects</h2>
+                    <p>Selected robotics systems demonstrating real-time control, autonomy, industrial deployment, and AI-enabled perception.</p>
+                </div>
+                <div class="home-project-grid home-project-grid-featured">
+                    {{- range . -}}
+                        {{- $project := $.Site.GetPage .page -}}
+                        {{- if $project -}}
+                            {{- $cardTitle := .title | default $project.Title -}}
+                            {{- $cardSummary := .summary | default ($project.Summary | plainify) -}}
+                            {{- $image := $project.Params.featuredimagepreview | default $project.Params.featuredimage -}}
+                            <article class="home-project-card home-project-card-featured">
+                                {{- with $image -}}
+                                    <a class="home-project-image" href="{{ $project.RelPermalink }}" aria-label="{{ $cardTitle }}">
+                                        {{- dict "Src" . "Title" $cardTitle "Resources" $project.Resources | partial "plugin/img.html" -}}
+                                    </a>
+                                {{- end -}}
+                                <div class="home-project-body">
+                                    <h3><a href="{{ $project.RelPermalink }}">{{ $cardTitle }}</a></h3>
+                                    <p>{{ $cardSummary }}</p>
+                                    <a class="home-project-link" href="{{ $project.RelPermalink }}">View project</a>
+                                </div>
+                            </article>
+                        {{- end -}}
+                    {{- end -}}
+                </div>
+            </section>
+        {{- end -}}
+
+        {{- with $homeProjects.more -}}
+            <section class="home-projects home-projects-more" aria-labelledby="more-projects-title">
+                <div class="home-section-header">
+                    <h2 id="more-projects-title">More Robotics Projects</h2>
+                </div>
+                <div class="home-project-grid home-project-grid-more">
+                    {{- range . -}}
+                        {{- $project := $.Site.GetPage .page -}}
+                        {{- if $project -}}
+                            {{- $cardTitle := .title | default $project.Title -}}
+                            {{- $cardSummary := .summary | default ($project.Summary | plainify) -}}
+                            {{- $image := $project.Params.featuredimagepreview | default $project.Params.featuredimage -}}
+                            <article class="home-project-card home-project-card-compact">
+                                {{- with $image -}}
+                                    <a class="home-project-image" href="{{ $project.RelPermalink }}" aria-label="{{ $cardTitle }}">
+                                        {{- dict "Src" . "Title" $cardTitle "Resources" $project.Resources | partial "plugin/img.html" -}}
+                                    </a>
+                                {{- end -}}
+                                <div class="home-project-body">
+                                    <h3><a href="{{ $project.RelPermalink }}">{{ $cardTitle }}</a></h3>
+                                    <p>{{ $cardSummary }}</p>
+                                </div>
+                            </article>
+                        {{- end -}}
+                    {{- end -}}
+                </div>
+            </section>
+        {{- end -}}
+
         {{- /* Content */ -}}
         {{- if .Content -}}
             <div class="single">
@@ -43,24 +104,8 @@
             </div>
         {{- end -}}
 
-        {{- /* Posts */ -}}
-        {{- if ne $posts.enable false | and .Site.RegularPages -}}
-            {{- /* Paginate */ -}}
-            {{- $pages := where .Site.RegularPages "Type" "posts" -}}
-            {{- if .Site.Params.page.hiddenFromHomePage -}}
-                {{- $pages = where $pages "Params.hiddenfromhomepage" false -}}
-            {{- else -}}
-                {{- $pages = where $pages "Params.hiddenfromhomepage" "!=" true -}}
-            {{- end -}}
-            {{- with $posts.paginate | default .Site.Params.paginate -}}
-                {{- $pages = $.Paginate $pages . -}}
-            {{- else -}}
-                {{- $pages = .Paginate $pages -}}
-            {{- end -}}
-            {{- range $pages.Pages -}}
-                {{- .Render "summary" -}}
-            {{- end -}}
-            {{- partial "paginator.html" . -}}
-        {{- end -}}
+        <div class="home-project-archive-link">
+            <a href="/posts/">Browse all projects</a>
+        </div>
     </div>
 {{- end -}}

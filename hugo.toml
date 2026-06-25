@@ -31,7 +31,7 @@ url = "/about/"
 [[menu.main]]
 weight = 3
 identifier = "posts"
-name = "Posts"
+name = "Projects"
 url = "/posts/"
 
 
@@ -77,8 +77,8 @@ rss = 10
 enable = true
 avatarURL = "images/avatar.png"
 title = ""
-subtitle = "Robotics engineer building intelligent real-time robotic systems."
-typeit = true
+subtitle = "Robotics R&D engineer building real-time robotic systems across EtherCAT motion control, legged robots, AMRs, and AI vision."
+typeit = false
 social = true
 disclaimer = ""
 
