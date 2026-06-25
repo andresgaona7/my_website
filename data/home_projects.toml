@@ -1,40 +1,51 @@
 [[featured]]
-page = "posts/post_11"
-summary = "C++ EtherCAT motion-control platform unifying 84+ devices, expanding motion-profile compatibility by ~20%, and improving customer adoption through faster device onboarding."
-
-[[featured]]
 page = "posts/post_09"
 title = "Quadruped Locomotion & Control Platform"
+label = "Legged Robotics"
 summary = "Torque-controlled quadruped locomotion platform with EtherCAT/RS485/LCM motor interfaces, sub-ms system latency, <10 ms communication, and 6+ hour validation."
 
 [[featured]]
 page = "posts/post_10"
 title = "Bio-Inspired Bionic Panda Robot"
+label = "Bio-Inspired Robotics"
 summary = "Bio-inspired quadruped behavior system for adaptive movement, climbing, balance recovery, and autonomous behavior selection, validated through 1+ hour continuous operation and simulation-informed control."
 
 [[featured]]
+page = "posts/post_11"
+label = "Real-Time Motion Control"
+summary = "C++ EtherCAT motion-control platform unifying 84+ devices, expanding motion-profile compatibility by ~20%, and improving customer adoption through faster device onboarding."
+
+[[featured]]
 page = "posts/post_08"
+label = "Autonomous Mobile Robots"
 summary = "ROS/ROS2 AMR platform with system integration across ROS2 navigation, EtherCAT actuation, odometry, and semantic mapping."
 
 [[featured]]
 page = "posts/post_06"
+label = "Industrial AI Vision"
 summary = "Industrial AI sorting system using YOLOv4, GPU inference, conveyor tracking, and delta robot picking, reaching up to 97% accuracy, ~21 FPS, and ~60 cycles/min."
 
 [[featured]]
 page = "posts/post_05"
+label = "Robotic Manipulation"
 summary = "AI grasping system validated on physical robot experiments with 1.5M+ augmented samples, 91.5% CNN accuracy, 94% grasp success, and ~10x faster inference."
 
 [[more]]
 page = "posts/post_04"
+label = "Vision-Guided Control"
 
 [[more]]
 page = "posts/post_03"
+label = "Servo Optimization"
 
 [[more]]
 page = "posts/post_01"
+label = "Path Planning"
 
 [[more]]
 page = "posts/post_02"
+label = "AR/VR Teaching"
 
 [[more]]
 page = "posts/post_07"
+label = "Mechatronics"

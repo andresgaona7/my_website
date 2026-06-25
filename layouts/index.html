@@ -52,22 +52,29 @@
                     <p>Selected robotics systems demonstrating real-time control, autonomy, industrial deployment, and AI-enabled perception.</p>
                 </div>
                 <div class="home-project-grid home-project-grid-featured">
-                    {{- range . -}}
+                    {{- range $index, $item := . -}}
                         {{- $project := $.Site.GetPage .page -}}
                         {{- if $project -}}
                             {{- $cardTitle := .title | default $project.Title -}}
                             {{- $cardSummary := .summary | default ($project.Summary | plainify) -}}
+                            {{- $cardLabel := .label -}}
                             {{- $image := $project.Params.featuredimagepreview | default $project.Params.featuredimage -}}
-                            <article class="home-project-card home-project-card-featured">
+                            <article class="home-project-card home-project-card-featured{{ if lt $index 2 }} home-project-card-lead{{ end }}">
                                 {{- with $image -}}
                                     <a class="home-project-image" href="{{ $project.RelPermalink }}" aria-label="{{ $cardTitle }}">
                                         {{- dict "Src" . "Title" $cardTitle "Resources" $project.Resources | partial "plugin/img.html" -}}
                                     </a>
                                 {{- end -}}
                                 <div class="home-project-body">
+                                    {{- with $cardLabel -}}
+                                        <div class="home-project-kicker">{{ . }}</div>
+                                    {{- end -}}
                                     <h3><a href="{{ $project.RelPermalink }}">{{ $cardTitle }}</a></h3>
                                     <p>{{ $cardSummary }}</p>
-                                    <a class="home-project-link" href="{{ $project.RelPermalink }}">View project</a>
+                                    <a class="home-project-link" href="{{ $project.RelPermalink }}">
+                                        <span>View project</span>
+                                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                                    </a>
                                 </div>
                             </article>
                         {{- end -}}
@@ -86,7 +93,7 @@
                         {{- $project := $.Site.GetPage .page -}}
                         {{- if $project -}}
                             {{- $cardTitle := .title | default $project.Title -}}
-                            {{- $cardSummary := .summary | default ($project.Summary | plainify) -}}
+                            {{- $cardLabel := .label -}}
                             {{- $image := $project.Params.featuredimagepreview | default $project.Params.featuredimage -}}
                             <article class="home-project-card home-project-card-compact">
                                 {{- with $image -}}
@@ -95,8 +102,10 @@
                                     </a>
                                 {{- end -}}
                                 <div class="home-project-body">
+                                    {{- with $cardLabel -}}
+                                        <div class="home-project-kicker">{{ . }}</div>
+                                    {{- end -}}
                                     <h3><a href="{{ $project.RelPermalink }}">{{ $cardTitle }}</a></h3>
-                                    <p>{{ $cardSummary }}</p>
                                 </div>
                             </article>
                         {{- end -}}

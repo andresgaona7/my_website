@@ -24,7 +24,7 @@ url = "/"
 [[menu.main]]
 weight = 2
 identifier = "about"
-name = "About me"
+name = "About"
 url = "/about/"
 
 
@@ -59,7 +59,7 @@ mobileMode = "auto"
 
 [params.header.title]
 logo = ""
-name = "🐼"
+name = ""
 pre = ""
 post = ""
 typeit = false
@@ -83,7 +83,7 @@ rss = 10
 enable = true
 avatarURL = "images/avatar.png"
 title = ""
-subtitle = "Robotics R&D engineer building real-time robotic systems across motion control, legged robots, AMRs, and AI vision."
+subtitle = "Robotics R&D engineer building real-time robotic systems across motion control, legged robots, and AMRs."
 typeit = false
 social = true
 disclaimer = ""
