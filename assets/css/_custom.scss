@@ -194,14 +194,25 @@ body {
 
   .home-banner-links {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     gap: .7rem;
+    width: 100%;
+    min-width: 15.75rem;
+    max-width: 18.5rem;
     margin-top: 1.35rem;
+  }
+
+  .home-banner-socials {
+    display: flex;
+    align-items: center;
+    gap: .55rem;
   }
 
   .home-banner-link {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: .42rem;
     min-height: 2.15rem;
     padding: 0 .72rem;
@@ -216,6 +227,26 @@ body {
       color: #fff;
       border-color: var(--home-accent);
       background: var(--home-accent);
+    }
+  }
+
+  .home-banner-link-icon {
+    width: 2.35rem;
+    min-width: 2.35rem;
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .home-banner-link-primary {
+    min-width: 9.2rem;
+    color: #fff;
+    border-color: var(--home-accent);
+    background: var(--home-accent);
+    white-space: nowrap;
+
+    &:hover {
+      border-color: var(--home-accent-strong);
+      background: var(--home-accent-strong);
     }
   }
 

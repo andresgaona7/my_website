@@ -19,22 +19,22 @@
                         {{- end -}}
                     </div>
                 {{- end -}}
-                <div class="home-banner-links">
+                <div class="home-banner-links" aria-label="Profile links">
+                    <div class="home-banner-socials">
                     {{- with .Site.Params.social.GitHub -}}
-                        <a class="home-banner-link" href="https://github.com/{{ . }}" rel="noopener noreferrer me" target="_blank">
+                        <a class="home-banner-link home-banner-link-icon" href="https://github.com/{{ . }}" rel="noopener noreferrer me" target="_blank" aria-label="GitHub">
                             <i class="fab fa-github" aria-hidden="true"></i>
-                            <span>GitHub</span>
                         </a>
                     {{- end -}}
                     {{- with .Site.Params.social.LinkedIn -}}
-                        <a class="home-banner-link" href="https://www.linkedin.com/in/{{ . }}" rel="noopener noreferrer me" target="_blank">
+                        <a class="home-banner-link home-banner-link-icon" href="https://www.linkedin.com/in/{{ . }}" rel="noopener noreferrer me" target="_blank" aria-label="LinkedIn">
                             <i class="fab fa-linkedin" aria-hidden="true"></i>
-                            <span>LinkedIn</span>
                         </a>
                     {{- end -}}
-                    <a class="home-banner-link" href="/andres-gaona-cv.pdf">
+                    </div>
+                    <a class="home-banner-link home-banner-link-primary" href="/andres-gaona-cv.pdf">
                         <i class="fas fa-file-arrow-down" aria-hidden="true"></i>
-                        <span>CV</span>
+                        <span>Download CV</span>
                     </a>
                 </div>
             </div>
