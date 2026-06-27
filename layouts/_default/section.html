@@ -3,6 +3,79 @@
 {{- end -}}
 
 {{- define "content" -}}
+    {{- if eq .Section "posts" -}}
+        {{- $homeProjects := .Site.Data.home_projects -}}
+        {{- $projectLabels := dict -}}
+        {{- $projectSummaries := dict -}}
+        {{- range $homeProjects.featured -}}
+            {{- $projectLabels = merge $projectLabels (dict .page .label) -}}
+            {{- $dataPage := .page -}}
+            {{- with .summary -}}{{- $projectSummaries = merge $projectSummaries (dict $dataPage .) -}}{{- end -}}
+        {{- end -}}
+        {{- range $homeProjects.more -}}
+            {{- $projectLabels = merge $projectLabels (dict .page .label) -}}
+            {{- $dataPage := .page -}}
+            {{- with .summary -}}{{- $projectSummaries = merge $projectSummaries (dict $dataPage .) -}}{{- end -}}
+        {{- end -}}
+
+        <div class="page archive projects-page">
+            <header class="projects-hero">
+                <p class="projects-kicker">Robotics portfolio</p>
+                <h1>Projects</h1>
+                <p>A compact index of robotics systems across real-time control, legged robots, AMRs, industrial AI vision, manipulation, and automation.</p>
+                <div class="projects-stats" aria-label="Project focus areas">
+                    <span>11 projects</span>
+                    <span>Real-time control</span>
+                    <span>Robotics R&amp;D</span>
+                    <span>Industrial AI</span>
+                </div>
+            </header>
+
+            {{- if .Pages -}}
+                <section class="projects-section" aria-labelledby="projects-index-title">
+                    <div class="projects-section-header">
+                        <h2 id="projects-index-title">Project Index</h2>
+                    </div>
+                    <div class="project-list">
+                        {{- range $index, $project := .Pages -}}
+                            {{- $pageKey := strings.TrimSuffix "/" $project.File.Dir -}}
+                            {{- $cardLabel := index $projectLabels $pageKey | default (index $project.Params.categories 0) | default (index $project.Params.tags 0) -}}
+                            {{- $cardSummary := index $projectSummaries $pageKey | default ($project.Summary | plainify | htmlUnescape | truncate 170) -}}
+                            {{- $image := $project.Params.featuredImagePreview | default $project.Params.featuredImage -}}
+                            <article class="project-list-item">
+                                <div class="project-list-rank">{{ printf "%02d" (add $index 1) }}</div>
+                                {{- with $image -}}
+                                    <a class="project-list-image" href="{{ $project.RelPermalink }}" aria-label="{{ $project.Title }}">
+                                        {{- dict "Src" . "Title" $project.Title "Resources" $project.Resources | partial "plugin/img.html" -}}
+                                    </a>
+                                {{- end -}}
+                                <div class="project-list-body">
+                                    <div class="project-list-meta">
+                                        {{- with $cardLabel -}}
+                                            <span class="project-list-label">{{ . }}</span>
+                                        {{- end -}}
+                                    </div>
+                                    <h3><a href="{{ $project.RelPermalink }}">{{ $project.Title | emojify }}</a></h3>
+                                    <p>{{ $cardSummary }}</p>
+                                    {{- with $project.Params.tags -}}
+                                        <div class="project-list-chips" aria-label="Project topics">
+                                            {{- range first 4 . -}}
+                                                <span>{{ . }}</span>
+                                            {{- end -}}
+                                        </div>
+                                    {{- end -}}
+                                </div>
+                                <a class="project-list-link" href="{{ $project.RelPermalink }}">
+                                    <span>View project</span>
+                                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                                </a>
+                            </article>
+                        {{- end -}}
+                    </div>
+                </section>
+            {{- end -}}
+        </div>
+    {{- else -}}
     <div class="page archive">
         {{- /* Title */ -}}
         <h2 class="single-title animate__animated animate__pulse animate__faster">
@@ -27,4 +100,5 @@
             {{- partial "paginator.html" . -}}
         {{- end -}}
     </div>
+    {{- end -}}
 {{- end -}}
