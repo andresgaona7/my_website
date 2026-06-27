@@ -8,9 +8,9 @@ title = 'About me'
   <section class="about-hero" aria-label="About Andres Gaona">
     <div class="about-hero-copy">
       <p class="about-kicker">Robotics R&amp;D Engineer</p>
-      <h1>Hi, I'm Andrés Gaona</h1>
+      <h1>Hi, I'm Andrés</h1>
       <p class="about-lede">I build real-time robotic systems that connect low-level hardware control with high-level autonomy.</p>
-      <p>I am a mechatronics engineer focused on real-time control software, robotic hardware integration, quadruped robots, autonomous mobile robots, and vision-guided manipulation. My work spans industrial motion-control platforms, legged robot control, AMR system integration, and robotic applications that combine perception, control, and reliable deployment.</p>
+      <p>I am a mechatronics engineer focused on real-time control software, robotic hardware integration, quadruped robots, autonomous mobile robots, and vision-guided manipulation that combine perception, control, and reliable deployment.</p>
       <div class="about-actions" aria-label="Primary profile actions">
         <a class="about-button about-button-primary" href="/andres-gaona-cv.pdf">
           <i class="fas fa-file-arrow-down" aria-hidden="true"></i>
@@ -20,9 +20,9 @@ title = 'About me'
           <i class="fas fa-diagram-project" aria-hidden="true"></i>
           <span>View Projects</span>
         </a>
-        <a class="about-button" href="mailto:adgaona7@gmail.com">
+        <a class="about-button about-button-primary" href="mailto:adgaona7@gmail.com">
           <i class="fas fa-envelope" aria-hidden="true"></i>
-          <span>Email</span>
+          <span>Email me</span>
         </a>
       </div>
     </div>
@@ -63,7 +63,7 @@ title = 'About me'
   <section class="about-section" aria-labelledby="about-projects-title">
     <div class="about-section-header">
       <p class="about-kicker">Portfolio Evidence</p>
-      <h2 id="about-projects-title">Selected Project Evidence</h2>
+      <h2 id="about-projects-title">Selected Projects</h2>
       <p>For recruiters, these projects show the strongest evidence of real robot deployment, industrial control software, system integration, and robotics R&amp;D depth.</p>
     </div>
     <div class="about-project-grid">
@@ -116,9 +116,10 @@ title = 'About me'
         <span>OpenCV</span>
         <span>MoveIt</span>
         <span>Linux</span>
+        <span>Windows</span>
+        <span>Docker</span>
         <span>Real-time control</span>
         <span>Industrial communication</span>
-        <span>Computer-vision-assisted robotics</span>
         <span>Git</span>
         <span>Jira</span>
         <span>Notion</span>

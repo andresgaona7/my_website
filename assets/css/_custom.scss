@@ -231,6 +231,7 @@ a:hover {
   width: calc(100% - 2rem);
   max-width: 1120px;
   padding-bottom: 3.5rem;
+  background: transparent;
 }
 
 .projects-page {
@@ -254,7 +255,9 @@ a:hover {
 
   .projects-hero {
     max-width: 58rem;
-    padding: 4.8rem 0 2rem;
+    box-sizing: border-box;
+    padding: 4.8rem clamp(1rem, 3vw, 2rem) 2rem;
+    background: transparent;
 
     h1 {
       margin: 0 0 .7rem;
@@ -284,27 +287,6 @@ a:hover {
 
   .projects-kicker {
     margin: 0 0 .55rem;
-  }
-
-  .projects-stats {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .55rem;
-    margin-top: 1.25rem;
-
-    span {
-      display: inline-flex;
-      align-items: center;
-      min-height: 2rem;
-      padding: 0 .68rem;
-      border: 1px solid var(--projects-border);
-      border-radius: .35rem;
-      color: var(--projects-accent-strong);
-      background: var(--projects-accent-soft);
-      font-size: .84rem;
-      font-weight: 750;
-      line-height: 1;
-    }
   }
 
   .projects-section {
@@ -530,11 +512,12 @@ a:hover {
   .home-banner-links {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     gap: .7rem;
     width: 100%;
-    min-width: 15.75rem;
-    max-width: 18.5rem;
+    min-width: 0;
+    max-width: 31rem;
     margin-top: 1.35rem;
   }
 
@@ -994,19 +977,10 @@ a:hover {
 
   .projects-page {
     .projects-hero {
-      padding: 2.4rem 0 1.6rem;
+      padding: 2.4rem .75rem 1.6rem;
 
       h1 {
         font-size: clamp(2.25rem, 12vw, 3.25rem);
-      }
-    }
-
-    .projects-stats {
-      gap: .45rem;
-
-      span {
-        min-height: 1.85rem;
-        font-size: .78rem;
       }
     }
 
