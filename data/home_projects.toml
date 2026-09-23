@@ -11,6 +11,12 @@ label = "Bio-Inspired Robotics"
 summary = "Bio-inspired quadruped behavior system for adaptive movement, climbing, balance recovery, and autonomous behavior selection, validated through 1+ hour continuous operation and simulation-informed control."
 
 [[featured]]
+page = "posts/post_12"
+title = "Reliable Pick-and-Place with ROS 2 and MoveIt 2"
+label = "Motion Planning & Manipulation"
+summary = "Collision-aware manipulation pipeline for a custom bionic panda robot, covering MoveIt configuration, trajectory execution, robust grasp planning, upper-body collision modeling, and task-level reachability testing."
+
+[[featured]]
 page = "posts/post_11"
 label = "Real-Time Motion Control"
 summary = "C++ EtherCAT motion-control platform unifying 84+ devices, expanding motion-profile compatibility by ~20%, and improving customer adoption through faster device onboarding."

@@ -1,5 +1,7 @@
 import os
+import subprocess
 import imageio
+import imageio_ffmpeg
 import numpy as np
 from PIL import Image
 from pathlib import Path
@@ -56,21 +58,50 @@ def gif_to_mp4(input_path, output_path):
         writer.append_data(frame)
 
     writer.close()
+
+
+def video_to_mp4(input_path, output_path):
+    """Convert MOV and WebM videos to browser-friendly MP4 files."""
+    subprocess.run(
+        [
+            imageio_ffmpeg.get_ffmpeg_exe(),
+            "-y",
+            "-i", str(input_path),
+            "-map", "0:v:0",
+            "-map", "0:a:0?",
+            "-map_metadata", "-1",
+            "-vf", "fps=30,scale=trunc(iw/2)*2:trunc(ih/2)*2",
+            "-c:v", "libx264",
+            "-crf", "23",
+            "-preset", "medium",
+            "-pix_fmt", "yuv420p",
+            "-c:a", "aac",
+            "-b:a", "128k",
+            "-movflags", "+faststart",
+            str(output_path),
+        ],
+        check=True,
+    )
     
     
 def process_folder(folder):
     for filename in os.listdir(folder):
         path = os.path.join(folder, filename)
         print("\t", path)
+        extension = Path(filename).suffix.lower()
         
         if os.path.isdir(path):
             process_folder(path)
 
-        if filename.endswith((".jpg", ".png", ".jpeg")):
-            convert_image(path, path.replace(".jpg", ".webp").replace(".png", ".webp"))
+        if extension in (".jpg", ".png", ".jpeg"):
+            convert_image(path, Path(path).with_suffix(".webp"))
 
-        elif filename.endswith(".gif"):
-            gif_to_mp4(path, path.replace(".gif", ".mp4"))
+        elif extension == ".gif":
+            gif_to_mp4(path, Path(path).with_suffix(".mp4"))
+
+        elif extension in (".mov", ".webm"):
+            video_to_mp4(path, Path(path).with_suffix(".mp4"))
 
 
-process_folder(SCRIPT_DIR / "older")
+if __name__ == "__main__":
+    process_folder(SCRIPT_DIR / "older")

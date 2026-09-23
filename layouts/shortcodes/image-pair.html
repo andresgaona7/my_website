@@ -1,0 +1,17 @@
+{{- $left := dict
+    "Src" (.Get "left")
+    "Alt" (.Get "left_alt")
+    "Linked" true
+    "Resources" .Page.Resources
+-}}
+{{- $right := dict
+    "Src" (.Get "right")
+    "Alt" (.Get "right_alt")
+    "Linked" true
+    "Resources" .Page.Resources
+-}}
+
+<div class="post-image-pair">
+    {{- partial "plugin/img.html" $left -}}
+    {{- partial "plugin/img.html" $right -}}
+</div>

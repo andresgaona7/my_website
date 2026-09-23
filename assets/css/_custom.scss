@@ -2,6 +2,32 @@
 // Custom style
 // ==============================
 
+.single .content .post-image-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 1rem;
+  margin: 1.5rem 0;
+
+  .lightgallery {
+    display: block;
+    min-width: 0;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .single .content .post-image-pair {
+    grid-template-columns: 1fr;
+  }
+}
+
 body {
   --site-bg: #f7f8ff;
   --site-surface: #ffffff;

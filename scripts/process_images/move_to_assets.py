@@ -20,4 +20,5 @@ def copy_everything(input_path, output_path):
             dst.parent.mkdir(parents=True, exist_ok=True)
             shutil.move(src, dst)
         
-copy_everything(SCRIPT_DIR / "older", SCRIPT_DIR / "new")
+if __name__ == "__main__":
+    copy_everything(SCRIPT_DIR / "older", SCRIPT_DIR / "new")
