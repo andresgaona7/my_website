@@ -24,7 +24,7 @@
 
 @media only screen and (max-width: 680px) {
   .single .content .post-image-pair {
-    grid-template-columns: 1fr;
+    gap: .5rem;
   }
 }
 
