@@ -15,7 +15,7 @@ tags:
   - Inverse kinematics
   - Collision checking
   - C++
-draft: true
+draft: false
 ---
 
 Building a pick-and-place system for a custom bionic panda robot, from the first robot model to reliable grasp planning with the complete upper body.
